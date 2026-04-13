@@ -1,0 +1,117 @@
+{
+  "agent": "Personalization Writer",
+  "timestamp": "2026-04-13T02:40:14Z",
+  "input_records": 17,
+  "draft_count": 12,
+  "inject_quality_failure": true,
+  "drafts": [
+    {
+      "lead_id": "6f5dce2d371d",
+      "name": "Keshav Ramani",
+      "company": "JPMorganChase",
+      "score": 75,
+      "subject": "JPMorganChase research quality workflow",
+      "body": "Hi there, this is revolutionary and guaranteed to transform everything instantly.",
+      "blog_angle": "How JPMorganChase can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "922f3d96c4fa",
+      "name": "Murtaza Cherawala",
+      "company": "Alexion Pharmaceuticals, Inc.",
+      "score": 75,
+      "subject": "Alexion Pharmaceuticals, Inc. research quality workflow",
+      "body": "Hi Murtaza Cherawala,\n\nI noticed your work around compliance, governance, risk. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what Alexion Pharmaceuticals, Inc. is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Head of AI, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How Alexion Pharmaceuticals, Inc. can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "4e758c92a02c",
+      "name": "Steve Breen",
+      "company": "R\u00f6chling Medical",
+      "score": 75,
+      "subject": "R\u00f6chling Medical research quality workflow",
+      "body": "Hi Steve Breen,\n\nI noticed your work around compliance, research, risk. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what R\u00f6chling Medical is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Global Director of Research and Development, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How R\u00f6chling Medical can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "cb2ee79be912",
+      "name": "Zhitao Fan (Ph.D)",
+      "company": "GoTo Group",
+      "score": 75,
+      "subject": "GoTo Group research quality workflow",
+      "body": "Hi Zhitao Fan (Ph.D),\n\nI noticed your work around compliance, governance, model checking. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what GoTo Group is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Head of Data, KYC, Computer Vision, Voice and AI, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How GoTo Group can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "913f32957501",
+      "name": "Dimple R.",
+      "company": "Fitch Solutions",
+      "score": 65,
+      "subject": "Fitch Solutions research quality workflow",
+      "body": "Hi Dimple R.,\n\nI noticed your work around research, verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what Fitch Solutions is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Director, Team Lead for UK & Western Europe Sales- Ratings, Research & Financial Data, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How Fitch Solutions can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "240a04293981",
+      "name": "Girish Sharma",
+      "company": "Mercury Insurance",
+      "score": 65,
+      "subject": "Mercury Insurance research quality workflow",
+      "body": "Hi Girish Sharma,\n\nI noticed your work around compliance, risk. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what Mercury Insurance is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Head of Data and AI engineering, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How Mercury Insurance can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "7b9efd008e71",
+      "name": "Samir Ouchani",
+      "company": "CESI",
+      "score": 65,
+      "subject": "CESI research quality workflow",
+      "body": "Hi Samir Ouchani,\n\nI noticed your work around research, verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what CESI is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Research Director, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How CESI can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "be3702908020",
+      "name": "Suniya Mohsin",
+      "company": "InvoZone",
+      "score": 65,
+      "subject": "InvoZone research quality workflow",
+      "body": "Hi Suniya Mohsin,\n\nI noticed your work around research, verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what InvoZone is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Entertainment XR Solutions-Director, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How InvoZone can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "91ce918018a7",
+      "name": "Ian Derbyshire",
+      "company": "Baker Hughes",
+      "score": 55,
+      "subject": "Baker Hughes research quality workflow",
+      "body": "Hi Ian Derbyshire,\n\nI noticed your work around research. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what Baker Hughes is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Director of Research & Technology, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How Baker Hughes can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "173839808caa",
+      "name": "Karen O'Dea",
+      "company": "Capgemini Engineering",
+      "score": 55,
+      "subject": "Capgemini Engineering research quality workflow",
+      "body": "Hi Karen O'Dea,\n\nI noticed your work around research. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what Capgemini Engineering is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Senior Director, Engineering, Research and Development Services, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How Capgemini Engineering can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "c9751cfa9436",
+      "name": "Marc Lyonnais",
+      "company": "Ciena",
+      "score": 55,
+      "subject": "Ciena research quality workflow",
+      "body": "Hi Marc Lyonnais,\n\nI noticed your work around research. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what Ciena is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Director, External Research, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How Ciena can operationalize verification-first research in high-stakes decisions"
+    },
+    {
+      "lead_id": "a2dccc6a5b67",
+      "name": "Miguel F Jimenez Sola",
+      "company": "Yoti",
+      "score": 55,
+      "subject": "Yoti research quality workflow",
+      "body": "Hi Miguel F Jimenez Sola,\n\nI noticed your work around verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.\n\nGiven what Yoti is doing in this space, a verification-first pilot can make review outcomes more defensible.\n\nGiven your role as Head of AI Services, a short pilot could show whether this reduces review cycles without sacrificing rigor.\n\nOpen to a 15-minute walkthrough next week?\n\nBest,\nMiroThinker GTM Team",
+      "blog_angle": "How Yoti can operationalize verification-first research in high-stakes decisions"
+    }
+  ]
+}

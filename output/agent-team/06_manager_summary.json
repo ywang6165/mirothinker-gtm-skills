@@ -1,0 +1,36 @@
+{
+  "agent": "GTM Manager / Orchestrator",
+  "timestamp": "2026-04-13T02:40:14Z",
+  "agent_count": 6,
+  "source_csv": "skills/capabilities/crustdata-supabase/output/mirothinker-20260412_1544.csv",
+  "lead_input_count": 25,
+  "accepted_count": 17,
+  "rejected_count": 8,
+  "draft_count": 12,
+  "qa_approved": 12,
+  "qa_rejected": 0,
+  "dedupe": {
+    "first_run_accepted": 17,
+    "second_run_new": 0,
+    "deterministic_sort": true
+  },
+  "dependency_proof": {
+    "simulated_missing_artifact": "output/agent-team/03_lead_scoring.json",
+    "downstream_blocked": true,
+    "message": "Writer blocked because scorer artifact missing"
+  },
+  "validation": {
+    "happy_path": "pass",
+    "quality_gate": "pass",
+    "dependency_proof": "pass",
+    "dedupe_rerun": "pass"
+  },
+  "artifacts": {
+    "icp": "output/agent-team/01_icp_profile.json",
+    "signals": "output/agent-team/02_signal_miner.json",
+    "scores": "output/agent-team/03_lead_scoring.json",
+    "drafts": "output/agent-team/04_personalization_drafts.json",
+    "qa": "output/agent-team/05_qa_review.json",
+    "manager": "output/agent-team/06_manager_summary.json"
+  }
+}

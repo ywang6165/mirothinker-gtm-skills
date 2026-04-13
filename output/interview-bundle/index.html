@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>MiroThinker GTM - Human Friendly Front Page</title>
+<style>
+body{margin:0;font-family:Inter,Arial,sans-serif;background:#f5f7fb;color:#0f172a}
+.wrap{max-width:1350px;margin:0 auto;padding:24px}
+.panel{background:#fff;border:1px solid #dbe3ef;border-radius:14px;padding:16px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.agent{background:#fff;border:1px solid #dbe3ef;border-radius:12px;padding:12px}
+.aid{display:inline-block;font-size:12px;font-weight:700;background:#e2e8f0;padding:4px 8px;border-radius:999px;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px solid #e2e8f0;padding:8px;text-align:left;vertical-align:top}th{background:#0f172a;color:#fff}
+pre{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px;white-space:pre-wrap}
+.muted{color:#475569;font-size:13px}
+.links a{display:inline-block;margin-right:10px}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <div class='panel'>
+    <h1>MiroThinker GTM Agents — What Runs, What It Does, and How It Works Together</h1>
+    <p class='muted'>Accuracy checked from run artifacts. This page is intentionally human-friendly and does not show a single "total leads" KPI at top-level.</p>
+    <p><strong>Latest extended run:</strong> 2026-04-13T02:40:14Z</p>
+    <div class='links'>
+      <a href='artifacts/mirothinker-step-by-step-execution.html' target='_blank'>Execution Trace</a>
+      <a href='artifacts/mirothinker-12-agent-graph.html' target='_blank'>Dependency Graph</a>
+      <a href='artifacts/extended_run_summary.json' target='_blank'>Run Summary JSON</a>
+    </div>
+  </div>
+
+  <div class='panel'>
+    <h2>How They Work Together on the Front Page</h2>
+    <p>The system has two layers: <strong>core execution agents</strong> (A1-A6) that qualify and create outreach assets, and <strong>expansion agents</strong> (A7-A12) that add community demand signals, benchmark intelligence, and enrichment context. Outputs converge into A4 (writer), then A5 (QA), then A6 (orchestrator validation/reporting).</p>
+  </div>
+
+  <div class='panel'>
+    <h2>Step-by-Step: What We Actually Invoked</h2>
+    <table>
+      <thead><tr><th>Step</th><th>Action</th><th>What happened</th></tr></thead>
+      <tbody><tr><td>1</td><td>Run core orchestration (A1-A6)</td><td>Built ICP, mined signals, scored leads, wrote drafts, QA checked, manager validated.</td></tr><tr><td>2</td><td>Run A7 OSS community scan</td><td>Fetched GitHub stargazers and produced ranked community prospects.</td></tr><tr><td>3</td><td>Run A8 benchmark watchdog</td><td>Pulled benchmark chatter and papers, flagged threat events.</td></tr><tr><td>4</td><td>Run A9 Reddit intent radar</td><td>Pulled high-intent Reddit posts and scored buying intent language.</td></tr><tr><td>5</td><td>Run A10 HN trend radar</td><td>Collected HN trend threads and deduped by story identity.</td></tr><tr><td>6</td><td>Run A11 enrichment resolver</td><td>Joined accepted leads with source metadata and persona labeling.</td></tr><tr><td>7</td><td>Run A12 intel synthesizer</td><td>Generated competitor threat levels and counter-positioning suggestions.</td></tr><tr><td>8</td><td>Build visuals + bundle + deploy</td><td>Rendered pages, rebuilt share bundle, deployed to Vercel.</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class='panel'>
+    <h2>All Agents, Their Personality, Function, Dependencies, and Output</h2>
+    <div class='grid'>
+      
+    <article class='agent'>
+      <div class='aid'>A1</div>
+      <h3>ICP Strategist</h3>
+      <p><strong>Personality:</strong> Strategic, principle-first, risk-aware planner.</p>
+      <p><strong>Main functionality:</strong> Defines who counts as a good customer fit and sets scoring policy.</p>
+      <p><strong>Output volume:</strong> Leads generated: 0 (policy stage)</p>
+      <p><strong>Workflow steps:</strong> Defines segments -&gt; sets keyword rules -&gt; sets exclusions -&gt; sets threshold.</p>
+      <p><strong>Depends on:</strong> None</p>
+      <p><strong>Feeds:</strong> A2</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A2</div>
+      <h3>Signal Miner</h3>
+      <p><strong>Personality:</strong> Analytical pattern finder; structured and literal.</p>
+      <p><strong>Main functionality:</strong> Converts raw records into structured signal features.</p>
+      <p><strong>Output volume:</strong> Records processed: 25</p>
+      <p><strong>Workflow steps:</strong> Reads profile text -&gt; extracts keywords -&gt; tags role/region/profile.</p>
+      <p><strong>Depends on:</strong> A1, A7, A9</p>
+      <p><strong>Feeds:</strong> A3</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A3</div>
+      <h3>Lead Scorer</h3>
+      <p><strong>Personality:</strong> Strict judge; deterministic and explainable.</p>
+      <p><strong>Main functionality:</strong> Scores each lead and explicitly accepts/rejects with reasons.</p>
+      <p><strong>Output volume:</strong> Accepted: 17 | Rejected: 8</p>
+      <p><strong>Workflow steps:</strong> Applies weighted formula -&gt; assigns band -&gt; stores acceptance reasons.</p>
+      <p><strong>Depends on:</strong> A2</p>
+      <p><strong>Feeds:</strong> A4, A11</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A4</div>
+      <h3>Personalization Writer</h3>
+      <p><strong>Personality:</strong> Empathetic communicator; precise, low-hype tone.</p>
+      <p><strong>Main functionality:</strong> Writes personalized outreach drafts and blog angles.</p>
+      <p><strong>Output volume:</strong> Drafts generated: 12</p>
+      <p><strong>Workflow steps:</strong> Reads accepted leads -&gt; drafts subject/body -&gt; adds blog angle per lead.</p>
+      <p><strong>Depends on:</strong> A3, A11, A12</p>
+      <p><strong>Feeds:</strong> A5</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A5</div>
+      <h3>QA Approver</h3>
+      <p><strong>Personality:</strong> Skeptical editor/auditor; anti-hype and quality-first.</p>
+      <p><strong>Main functionality:</strong> Checks draft quality, retries failures once, approves or blocks.</p>
+      <p><strong>Output volume:</strong> Approved: 12 | Rejected: 0 | Retries: 1</p>
+      <p><strong>Workflow steps:</strong> Checks name/company context -&gt; bans hype -&gt; retry rewrite -&gt; final verdict.</p>
+      <p><strong>Depends on:</strong> A4</p>
+      <p><strong>Feeds:</strong> A6</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A6</div>
+      <h3>GTM Orchestrator</h3>
+      <p><strong>Personality:</strong> Ops manager; consistency and reliability obsessed.</p>
+      <p><strong>Main functionality:</strong> Runs end-to-end execution order and validation checks.</p>
+      <p><strong>Output volume:</strong> Leads generated: 0 (control and validation stage)</p>
+      <p><strong>Workflow steps:</strong> Runs sequence -&gt; tests dependency fail-safe -&gt; tests dedupe reproducibility.</p>
+      <p><strong>Depends on:</strong> A1-A5</p>
+      <p><strong>Feeds:</strong> A12 + reporting</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A7</div>
+      <h3>OSS Community Pipeline</h3>
+      <p><strong>Personality:</strong> Community scout; curious and opportunistic.</p>
+      <p><strong>Main functionality:</strong> Finds and ranks GitHub community prospects.</p>
+      <p><strong>Output volume:</strong> Community prospects ranked: 0</p>
+      <p><strong>Workflow steps:</strong> Fetches stargazers -&gt; enriches profiles -&gt; scores tiers -&gt; emits ranked list.</p>
+      <p><strong>Depends on:</strong> GitHub API</p>
+      <p><strong>Feeds:</strong> A2, A11</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A8</div>
+      <h3>Benchmark Signal Watchdog</h3>
+      <p><strong>Personality:</strong> Competitive sentinel; alert and evidence-driven.</p>
+      <p><strong>Main functionality:</strong> Monitors benchmark/news chatter and flags threats.</p>
+      <p><strong>Output volume:</strong> Threat events flagged: 3</p>
+      <p><strong>Workflow steps:</strong> Queries HN -&gt; reads arXiv updates -&gt; ranks threat signals.</p>
+      <p><strong>Depends on:</strong> HN + arXiv</p>
+      <p><strong>Feeds:</strong> A12</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A9</div>
+      <h3>Reddit Intent Radar</h3>
+      <p><strong>Personality:</strong> Demand sensor; pain-point focused.</p>
+      <p><strong>Main functionality:</strong> Finds high-intent Reddit demand conversations.</p>
+      <p><strong>Output volume:</strong> High-intent threads: 18</p>
+      <p><strong>Workflow steps:</strong> Searches intent queries -&gt; scores language signals -&gt; outputs high-intent set.</p>
+      <p><strong>Depends on:</strong> Reddit API</p>
+      <p><strong>Feeds:</strong> A2</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A10</div>
+      <h3>HackerNews Trend Radar</h3>
+      <p><strong>Personality:</strong> Trend watcher; high signal/noise filter.</p>
+      <p><strong>Main functionality:</strong> Tracks strategic HN threads and deduplicates trend signals.</p>
+      <p><strong>Output volume:</strong> Trend threads captured: 28</p>
+      <p><strong>Workflow steps:</strong> Runs keyword scans -&gt; dedupes -&gt; ranks by engagement.</p>
+      <p><strong>Depends on:</strong> HN Algolia</p>
+      <p><strong>Feeds:</strong> A8, A12</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A11</div>
+      <h3>ICP Enrichment Resolver</h3>
+      <p><strong>Personality:</strong> Data steward; detail-accurate enricher.</p>
+      <p><strong>Main functionality:</strong> Enriches accepted leads with persona/domain/link context.</p>
+      <p><strong>Output volume:</strong> Leads enriched: 17</p>
+      <p><strong>Workflow steps:</strong> Merges accepted leads with source metadata -&gt; assigns buyer persona.</p>
+      <p><strong>Depends on:</strong> A3, A7</p>
+      <p><strong>Feeds:</strong> A4</p>
+    </article>
+    
+    <article class='agent'>
+      <div class='aid'>A12</div>
+      <h3>Competitive Intel Synthesizer</h3>
+      <p><strong>Personality:</strong> Narrative strategist; counter-positioning thinker.</p>
+      <p><strong>Main functionality:</strong> Builds competitor intel and GTM counter-narratives.</p>
+      <p><strong>Output volume:</strong> Competitors monitored: 6</p>
+      <p><strong>Workflow steps:</strong> Combines benchmark+trend signals -&gt; scores threat level -&gt; outputs counters.</p>
+      <p><strong>Depends on:</strong> A6, A8, A10</p>
+      <p><strong>Feeds:</strong> A4 + strategy outputs</p>
+    </article>
+    
+    </div>
+  </div>
+
+  <div class='panel'>
+    <h2>Zip Instructions (as requested)</h2>
+    <pre>cd /Users/yi/Documents/MiroThinker_GTM/GTM-skills/output
+zip -r mirothinker-interview-bundle.zip interview-bundle</pre>
+  </div>
+</div>
+</body>
+</html>

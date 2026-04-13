@@ -1,0 +1,117 @@
+{
+  "node_count": 12,
+  "nodes": [
+    {
+      "id": "A1",
+      "name": "ICP Strategist"
+    },
+    {
+      "id": "A2",
+      "name": "Signal Miner"
+    },
+    {
+      "id": "A3",
+      "name": "Lead Scorer"
+    },
+    {
+      "id": "A4",
+      "name": "Personalization Writer"
+    },
+    {
+      "id": "A5",
+      "name": "QA / Approver"
+    },
+    {
+      "id": "A6",
+      "name": "GTM Manager"
+    },
+    {
+      "id": "A7",
+      "name": "OSS Community Pipeline"
+    },
+    {
+      "id": "A8",
+      "name": "Benchmark Signal Watchdog"
+    },
+    {
+      "id": "A9",
+      "name": "Reddit Intent Radar"
+    },
+    {
+      "id": "A10",
+      "name": "HackerNews Trend Radar"
+    },
+    {
+      "id": "A11",
+      "name": "ICP Enrichment Resolver"
+    },
+    {
+      "id": "A12",
+      "name": "Competitive Intel Synthesizer"
+    }
+  ],
+  "edge_count": 15,
+  "edges": [
+    {
+      "from": "A1",
+      "to": "A2"
+    },
+    {
+      "from": "A2",
+      "to": "A3"
+    },
+    {
+      "from": "A3",
+      "to": "A4"
+    },
+    {
+      "from": "A4",
+      "to": "A5"
+    },
+    {
+      "from": "A5",
+      "to": "A6"
+    },
+    {
+      "from": "A7",
+      "to": "A2"
+    },
+    {
+      "from": "A9",
+      "to": "A2"
+    },
+    {
+      "from": "A10",
+      "to": "A8"
+    },
+    {
+      "from": "A8",
+      "to": "A12"
+    },
+    {
+      "from": "A10",
+      "to": "A12"
+    },
+    {
+      "from": "A3",
+      "to": "A11"
+    },
+    {
+      "from": "A11",
+      "to": "A4"
+    },
+    {
+      "from": "A12",
+      "to": "A4"
+    },
+    {
+      "from": "A7",
+      "to": "A11"
+    },
+    {
+      "from": "A6",
+      "to": "A12"
+    }
+  ],
+  "mermaid": "graph TD\n  A1[A1] --> A2[A2]\n  A2[A2] --> A3[A3]\n  A3[A3] --> A4[A4]\n  A4[A4] --> A5[A5]\n  A5[A5] --> A6[A6]\n  A7[A7] --> A2[A2]\n  A9[A9] --> A2[A2]\n  A10[A10] --> A8[A8]\n  A8[A8] --> A12[A12]\n  A10[A10] --> A12[A12]\n  A3[A3] --> A11[A11]\n  A11[A11] --> A4[A4]\n  A12[A12] --> A4[A4]\n  A7[A7] --> A11[A11]\n  A6[A6] --> A12[A12]"
+}

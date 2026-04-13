@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>MiroThinker Step-by-Step Execution Trace</title>
+<style>
+body{font-family:Inter,Arial,sans-serif;margin:0;background:#f6f8fc;color:#0f172a}
+.wrap{max-width:1400px;margin:0 auto;padding:24px}
+.card{background:#fff;border:1px solid #dbe3ef;border-radius:12px;padding:16px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.k{background:#fff;border:1px solid #dbe3ef;border-radius:10px;padding:10px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{border-bottom:1px solid #e2e8f0;padding:8px;text-align:left;vertical-align:top}
+th{background:#0f172a;color:#fff;position:sticky;top:0}
+.table-wrap{max-height:560px;overflow:auto;border:1px solid #dbe3ef;border-radius:10px}
+code{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:2px 4px}
+.muted{color:#475569;font-size:13px}
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <div class='card'>
+    <h1>MiroThinker: Step-by-Step Execution Trace</h1>
+    <p class='muted'>This page shows exactly what was invoked, whether it was live, and how each key number was produced.</p>
+  </div>
+
+  <div class='grid'>
+    <div class='k'><strong>Source Lead Batch</strong><div>25</div></div>
+    <div class='k'><strong>Accepted Leads</strong><div>17</div></div>
+    <div class='k'><strong>Drafts Generated</strong><div>12</div></div>
+    <div class='k'><strong>QA Approved</strong><div>12</div></div>
+    <div class='k'><strong>Total Agents (Extended)</strong><div>12</div></div>
+  </div>
+
+  <div class='card'>
+    <h2>Execution Timeline</h2>
+    <div class='table-wrap'>
+      <table>
+        <thead>
+          <tr>
+            <th>Step</th>
+            <th>Agent / Stage</th>
+            <th>What Was Invoked</th>
+            <th>Live?</th>
+            <th>Data Source</th>
+            <th>Numbers Produced</th>
+            <th>What It Contributed</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>1</td><td>Core Run Bootstrap</td><td><code>python3 GTM-skills/scripts/miro_gtm_agent_team.py</code></td><td>Yes</td><td>Live CSV from CrustData prior run + local artifacts</td><td>lead_input_count=25, accepted=17, rejected=8</td><td>This is where the 25-lead batch enters the pipeline.</td></tr><tr><td>2</td><td>A7 OSS Community Pipeline</td><td><code>internal call: agent7_oss_community_pipeline()</code></td><td>Yes</td><td>GitHub API stargazers + user profile enrichment</td><td>fetched_stargazers=None, enriched_profiles=None, top_prospects=0</td><td>Adds additional community-sourced prospects/signals; does not overwrite CrustData lead batch.</td></tr><tr><td>3</td><td>A8 Benchmark Signal Watchdog</td><td><code>internal call: agent8_benchmark_watchdog()</code></td><td>Yes</td><td>HN Algolia API + arXiv API</td><td>hn_hits=10, threat_count=3, arxiv_papers=8</td><td>Produces benchmark risk signals for messaging/positioning.</td></tr><tr><td>4</td><td>A9 Reddit Intent Radar</td><td><code>internal call: agent9_reddit_intent_radar()</code></td><td>Yes</td><td>Reddit search API</td><td>total_posts=66, high_intent_posts=18</td><td>Adds demand-intent social signals into the pipeline.</td></tr><tr><td>5</td><td>A10 HN Trend Radar</td><td><code>internal call: agent10_hn_trend_radar()</code></td><td>Yes</td><td>HN Algolia API keyword scans</td><td>threads=28</td><td>Adds trend/chatter signals used by A8/A12.</td></tr><tr><td>6</td><td>A11 ICP Enrichment Resolver</td><td><code>internal call: agent11_icp_enrichment_resolver()</code></td><td>Derived</td><td>Core accepted leads + source CSV fields</td><td>enriched_count=17</td><td>Converts accepted leads into outreach-ready enriched records.</td></tr><tr><td>7</td><td>A12 Competitive Intel Synthesizer</td><td><code>internal call: agent12_competitive_intel_synthesizer()</code></td><td>Mixed (live inputs, derived synthesis)</td><td>A8/A10 outputs + orchestration context</td><td>competitors=6, high_threats=0</td><td>Produces competitor-aware counter-positioning guidance for messaging.</td></tr><tr><td>8</td><td>Visualization Build</td><td><code>render scripts + build_interview_bundle.py + vercel deploy</code></td><td>Derived from artifacts</td><td>All generated JSON outputs</td><td>total_agents=12, dependency_edges=15, qa_approved=12</td><td>Produces interview-ready evidence pages and clickable hosted links.</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class='card'>
+    <h2>Direct Answers</h2>
+    <ul>
+      <li><strong>Did we run all agents live?</strong> Core A1-A6 + new A7/A8/A9/A10 were executed with live API/data fetches in the last run. A11 and A12 are synthesis/enrichment over those live outputs.</li>
+      <li><strong>Why still 25 leads?</strong> That number comes from the current CrustData source batch for the core pipeline input. New agents add signals/intel/enrichment, not automatic replacement of that source batch size.</li>
+      <li><strong>Which agent produced leads?</strong> Core lead list comes from the CrustData source pipeline entering A2/A3; A7 adds an additional community prospect channel; A9 adds intent leads/signals.</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

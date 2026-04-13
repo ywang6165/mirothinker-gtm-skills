@@ -1,0 +1,45 @@
+{
+  "agent": "ICP Strategist",
+  "timestamp": "2026-04-13T02:40:14Z",
+  "source_count": 25,
+  "product": "MiroThinker",
+  "positioning": "Verification-first deep research workflow for regulated and high-risk decisions.",
+  "ideal_titles_keywords": [
+    "head",
+    "director",
+    "vp",
+    "chief",
+    "principal",
+    "lead"
+  ],
+  "ideal_segments": [
+    "Financial services risk/compliance teams",
+    "Audit and assurance groups",
+    "Pharma and regulated R&D",
+    "Legal research and due-diligence operations"
+  ],
+  "signal_keywords": [
+    "verification",
+    "model checking",
+    "risk",
+    "compliance",
+    "research",
+    "audit",
+    "due diligence",
+    "governance"
+  ],
+  "exclusion_keywords": [
+    "student",
+    "intern",
+    "recruiter",
+    "advisor"
+  ],
+  "region_preference": [
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Singapore"
+  ],
+  "minimum_score_to_contact": 45,
+  "notes": "ICP tuned for interview demo: prioritize verifiable research workflows over broad AI curiosity."
+}

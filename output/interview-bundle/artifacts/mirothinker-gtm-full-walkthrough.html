@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>MiroThinker GTM Full Walkthrough</title>
+  <style>
+    body { font-family: Inter, Arial, sans-serif; margin:0; background:#f5f7fb; color:#0f172a; }
+    .wrap { max-width: 1360px; margin: 0 auto; padding: 24px; }
+    .panel { background:#fff; border:1px solid #dbe3ef; border-radius:14px; padding:16px; margin-bottom:12px; }
+    h1,h2,h3 { margin:0 0 10px; }
+    .muted { color:#475569; font-size:13px; }
+    .chain { color:#0f766e; font-weight:700; }
+    .kpis { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:10px; }
+    .kpi { background:#fff; border:1px solid #dbe3ef; border-radius:12px; padding:12px; }
+    table { width:100%; border-collapse:collapse; font-size:13px; }
+    th, td { border-bottom:1px solid #e2e8f0; text-align:left; padding:8px; vertical-align:top; }
+    th { background:#0f172a; color:#fff; position:sticky; top:0; }
+    .table-wrap { max-height:420px; overflow:auto; border:1px solid #dbe3ef; border-radius:10px; }
+    code, pre { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; }
+    code { padding:2px 5px; }
+    pre { padding:10px; white-space:pre-wrap; }
+    .email-block { border:1px solid #dbe3ef; border-radius:10px; padding:10px; margin-bottom:10px; background:#fff; }
+    .cols { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    @media (max-width:1100px) { .kpis{grid-template-columns:repeat(2,minmax(0,1fr));} .cols{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <div class='wrap'>
+    <div class='panel'>
+      <h1>MiroThinker GTM Agents Team - Full Technical Walkthrough</h1>
+      <p class='muted'>This is the full evidence package from the latest run. It is meant to prove reproducible real outputs, not a conceptual overview.</p>
+      <p class='chain'>Dependency chain: ICP Strategist -> Signal Miner -> Lead Scorer -> Personalization Writer -> QA/Approver -> GTM Manager</p>
+      <p class='muted'>Latest run timestamp: 2026-04-13T02:40:14Z</p>
+      <p class='muted'>Source lead dataset: <code>skills/capabilities/crustdata-supabase/output/mirothinker-20260412_1544.csv</code></p>
+    </div>
+
+    <div class='kpis'>
+      <div class='kpi'><strong>Input leads</strong><div>25</div></div>
+      <div class='kpi'><strong>Accepted leads</strong><div>17</div></div>
+      <div class='kpi'><strong>Rejected leads</strong><div>8</div></div>
+      <div class='kpi'><strong>Drafts generated</strong><div>12</div></div>
+      <div class='kpi'><strong>QA retried</strong><div>1</div></div>
+      <div class='kpi'><strong>Dedupe run-2 new</strong><div>0</div></div>
+    </div>
+
+    <div class='panel'>
+      <h2>What You Did (Operator Actions)</h2>
+      <ol>
+        <li>Provided live data credentials and selected MiroThinker scope.</li>
+        <li>Ran SQL in Supabase SQL Editor to provision required tables.</li>
+        <li>Confirmed project path rename and Goose repository path updates.</li>
+        <li>Requested real runs, then requested full dependency-validated agent presentation.</li>
+      </ol>
+      <p class='muted'>Outcome: pipeline executed on real CrustData CSV and produced full artifacts in <code>output/agent-team</code>.</p>
+    </div>
+
+    <div class='cols'>
+      <div class='panel'>
+        <h2>Agent-by-Agent Exact Output Contract</h2>
+        <ol>
+          <li><strong>ICP Strategist</strong>: emits target segments, title rules, keyword set, exclusions, threshold.</li>
+          <li><strong>Signal Miner</strong>: emits normalized lead signals per lead_id.</li>
+          <li><strong>Lead Scorer</strong>: emits accepted/rejected arrays with numeric score + reasons.</li>
+          <li><strong>Personalization Writer</strong>: emits subject/body/blog angle drafts for top accepted leads.</li>
+          <li><strong>QA/Approver</strong>: emits approved/rejected drafts with QA notes and retry evidence.</li>
+          <li><strong>GTM Manager</strong>: emits validation status, dependency test, dedupe determinism, artifact index.</li>
+        </ol>
+      </div>
+      <div class='panel'>
+        <h2>Decision Engine (Exact Logic)</h2>
+        <pre>Base score = 0
++30 if title includes one of: head, director, vp, chief, principal, lead
++10 per matched signal keyword (cap +30)
++10 if region includes preferred countries (US/UK/Canada/Singapore)
++5 if LinkedIn profile exists
+-15 if company contains &quot;university&quot;
+-50 if title/name includes exclusion keywords (student, intern, recruiter, advisor)
+Accept if score &gt;= 45
+Band: A&gt;=65, B&gt;=45, C&lt;45</pre>
+        <p class='muted'>ICP threshold from artifact: <strong>45</strong></p>
+      </div>
+    </div>
+
+    <div class='cols'>
+      <div class='panel'>
+        <h2>Validation Proofs</h2>
+        <ul>
+          <li>Happy-path: <strong>pass</strong></li>
+          <li>Quality-gate: <strong>pass</strong></li>
+          <li>Dependency-proof: <strong>pass</strong></li>
+          <li>Dedupe-rerun: <strong>pass</strong></li>
+        </ul>
+        <p class='muted'>Dependency simulation: Writer blocked because scorer artifact missing</p>
+      </div>
+      <div class='panel'>
+        <h2>Data Gathered (Signals)</h2>
+        <div class='table-wrap'>
+          <table>
+            <thead><tr><th>Keyword</th><th>Matched leads</th></tr></thead>
+            <tbody><tr><td>research</td><td>14</td></tr><tr><td>verification</td><td>11</td></tr><tr><td>compliance</td><td>5</td></tr><tr><td>risk</td><td>5</td></tr><tr><td>governance</td><td>4</td></tr><tr><td>model checking</td><td>3</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class='panel'>
+      <h2>Accepted Lead Decisions (All)</h2>
+      <div class='table-wrap'>
+        <table>
+          <thead><tr><th>Lead ID</th><th>Name</th><th>Company</th><th>Title</th><th>Score</th><th>Band</th><th>Decision reasons</th></tr></thead>
+          <tbody><tr><td>6f5dce2d371d</td><td>Keshav Ramani</td><td>JPMorganChase</td><td>Executive Director | AI Research Director</td><td>75</td><td>A</td><td>senior title match; signal keyword match (model checking, research, verification); preferred region; has LinkedIn profile</td></tr><tr><td>922f3d96c4fa</td><td>Murtaza Cherawala</td><td>Alexion Pharmaceuticals, Inc.</td><td>Head of AI</td><td>75</td><td>A</td><td>senior title match; signal keyword match (compliance, governance, risk); preferred region; has LinkedIn profile</td></tr><tr><td>4e758c92a02c</td><td>Steve Breen</td><td>Röchling Medical</td><td>Global Director of Research and Development</td><td>75</td><td>A</td><td>senior title match; signal keyword match (compliance, research, risk); preferred region; has LinkedIn profile</td></tr><tr><td>cb2ee79be912</td><td>Zhitao Fan (Ph.D)</td><td>GoTo Group</td><td>Head of Data, KYC, Computer Vision, Voice and AI</td><td>75</td><td>A</td><td>senior title match; signal keyword match (compliance, governance, model checking); preferred region; has LinkedIn profile</td></tr><tr><td>913f32957501</td><td>Dimple R.</td><td>Fitch Solutions</td><td>Director, Team Lead for UK &amp; Western Europe Sales- Ratings, Research &amp; Financial Data</td><td>65</td><td>A</td><td>senior title match; signal keyword match (research, verification); preferred region; has LinkedIn profile</td></tr><tr><td>240a04293981</td><td>Girish Sharma</td><td>Mercury Insurance</td><td>Head of Data and AI engineering</td><td>65</td><td>A</td><td>senior title match; signal keyword match (compliance, risk); preferred region; has LinkedIn profile</td></tr><tr><td>7b9efd008e71</td><td>Samir Ouchani</td><td>CESI</td><td>Research Director</td><td>65</td><td>A</td><td>senior title match; signal keyword match (research, verification); preferred region; has LinkedIn profile</td></tr><tr><td>be3702908020</td><td>Suniya Mohsin</td><td>InvoZone</td><td>Entertainment XR Solutions-Director</td><td>65</td><td>A</td><td>senior title match; signal keyword match (research, verification); preferred region; has LinkedIn profile</td></tr><tr><td>91ce918018a7</td><td>Ian Derbyshire</td><td>Baker Hughes</td><td>Director of Research &amp; Technology</td><td>55</td><td>B</td><td>senior title match; signal keyword match (research); preferred region; has LinkedIn profile</td></tr><tr><td>173839808caa</td><td>Karen O&#x27;Dea</td><td>Capgemini Engineering</td><td>Senior Director, Engineering, Research and Development Services</td><td>55</td><td>B</td><td>senior title match; signal keyword match (research); preferred region; has LinkedIn profile</td></tr><tr><td>c9751cfa9436</td><td>Marc Lyonnais</td><td>Ciena</td><td>Director, External Research</td><td>55</td><td>B</td><td>senior title match; signal keyword match (research); preferred region; has LinkedIn profile</td></tr><tr><td>a2dccc6a5b67</td><td>Miguel F Jimenez Sola</td><td>Yoti</td><td>Head of AI Services</td><td>55</td><td>B</td><td>senior title match; signal keyword match (verification); preferred region; has LinkedIn profile</td></tr><tr><td>58b8f1634db8</td><td>Sharan Narang</td><td>Meta</td><td>Director, AI Research</td><td>55</td><td>B</td><td>senior title match; signal keyword match (research); preferred region; has LinkedIn profile</td></tr><tr><td>e2666cb56549</td><td>Antonios Tsourdos</td><td>Cranfield University</td><td>Director of AI, Robotics and Space Theme</td><td>50</td><td>B</td><td>senior title match; signal keyword match (model checking, verification); preferred region; has LinkedIn profile; academic org de-prioritized</td></tr><tr><td>39494d7ec9be</td><td>Jesse Wolfe</td><td>Upgrade, Inc.</td><td>Head of AI Organization Design | FinTech</td><td>45</td><td>B</td><td>senior title match; preferred region; has LinkedIn profile</td></tr><tr><td>9d47a1aaa819</td><td>Ramana Kompella</td><td>Cisco</td><td>Cisco Fellow and Head of Cisco Research</td><td>45</td><td>B</td><td>senior title match; signal keyword match (research); has LinkedIn profile</td></tr><tr><td>db8095ff1fb7</td><td>Vladislav Nodelman, PhD</td><td>BeOne Medicines</td><td>Owner / Principal</td><td>45</td><td>B</td><td>senior title match; preferred region; has LinkedIn profile</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class='panel'>
+      <h2>Rejected Lead Decisions (All)</h2>
+      <div class='table-wrap'>
+        <table>
+          <thead><tr><th>Lead ID</th><th>Name</th><th>Company</th><th>Title</th><th>Score</th><th>Band</th><th>Decision reasons</th></tr></thead>
+          <tbody><tr><td>c0f8aea06a01</td><td>Ihab Hamadi</td><td>Western Digital</td><td>Head of AI Infrastructure and Strategy, Platforms</td><td>35</td><td>C</td><td>senior title match; has LinkedIn profile</td></tr><tr><td>a563424f7ee0</td><td>Lucas Cordeiro</td><td>The University of Manchester</td><td>Associate Professor in Computing System Architecture</td><td>10</td><td>C</td><td>signal keyword match (research); preferred region; has LinkedIn profile; academic org de-prioritized</td></tr><tr><td>7a1e46ac4229</td><td>Luke Ong</td><td>Nanyang Technological University Singapore</td><td>Emeritus Fellow</td><td>0</td><td>C</td><td>preferred region; has LinkedIn profile; academic org de-prioritized</td></tr><tr><td>b5a579f7093c</td><td>Nigel Guy</td><td>Sumitomo Mitsui Banking Corporation</td><td>Technical and Commercial Director (Advisory)</td><td>15</td><td>C</td><td>senior title match; signal keyword match (governance, verification); preferred region; has LinkedIn profile; explicit exclusion keyword</td></tr><tr><td>f922d1400674</td><td>Nikolaos Louloudakis, Ph.D.</td><td>Barclays</td><td>Co-Founder</td><td>25</td><td>C</td><td>signal keyword match (research); preferred region; has LinkedIn profile</td></tr><tr><td>66cbf184f8ab</td><td>Pritish Nawlakhe</td><td>Kind Lending | NMLS #3925</td><td>AI Evangelist</td><td>35</td><td>C</td><td>signal keyword match (compliance, governance, risk); has LinkedIn profile</td></tr><tr><td>2d6c40dc6399</td><td>Richard Pellegrino</td><td>Virginia Commonwealth University</td><td>Senior Director, Research &amp; Development</td><td>30</td><td>C</td><td>senior title match; signal keyword match (research); has LinkedIn profile; academic org de-prioritized</td></tr><tr><td>8326991a96ab</td><td>Ryan Connolly</td><td>Calyxo, Inc.</td><td>Senior Vice President of Research and Development</td><td>35</td><td>C</td><td>signal keyword match (research, verification); preferred region; has LinkedIn profile</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class='panel'>
+      <h2>Generated Personalized Emails (QA Approved)</h2>
+      <p class='muted'>These are the exact generated outputs (subject/body/blog-angle) after QA checks.</p>
+      <details class='email-block'><summary><strong>Keshav Ramani</strong> | JPMorganChase | score 75</summary><p><strong>Subject:</strong> JPMorganChase research quality workflow</p><pre>Hi Keshav Ramani,
+
+I reviewed JPMorganChase&#x27;s public research footprint and saw strong focus on verification discipline. MiroThinker helps teams keep evidence traceable from source to final recommendation.
+
+If useful, we can run a narrow pilot against one of your current review-heavy workflows and share a before/after quality and turnaround analysis.
+
+Would a short call next week be helpful?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved after retry (missing prospect name; missing company context; email too short; contains hype wording)</p><p class='muted'><strong>Blog angle:</strong> How JPMorganChase can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Murtaza Cherawala</strong> | Alexion Pharmaceuticals, Inc. | score 75</summary><p><strong>Subject:</strong> Alexion Pharmaceuticals, Inc. research quality workflow</p><pre>Hi Murtaza Cherawala,
+
+I noticed your work around compliance, governance, risk. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Alexion Pharmaceuticals, Inc. is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Head of AI, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Alexion Pharmaceuticals, Inc. can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Steve Breen</strong> | Röchling Medical | score 75</summary><p><strong>Subject:</strong> Röchling Medical research quality workflow</p><pre>Hi Steve Breen,
+
+I noticed your work around compliance, research, risk. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Röchling Medical is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Global Director of Research and Development, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Röchling Medical can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Zhitao Fan (Ph.D)</strong> | GoTo Group | score 75</summary><p><strong>Subject:</strong> GoTo Group research quality workflow</p><pre>Hi Zhitao Fan (Ph.D),
+
+I noticed your work around compliance, governance, model checking. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what GoTo Group is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Head of Data, KYC, Computer Vision, Voice and AI, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How GoTo Group can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Dimple R.</strong> | Fitch Solutions | score 65</summary><p><strong>Subject:</strong> Fitch Solutions research quality workflow</p><pre>Hi Dimple R.,
+
+I noticed your work around research, verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Fitch Solutions is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Director, Team Lead for UK &amp; Western Europe Sales- Ratings, Research &amp; Financial Data, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Fitch Solutions can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Girish Sharma</strong> | Mercury Insurance | score 65</summary><p><strong>Subject:</strong> Mercury Insurance research quality workflow</p><pre>Hi Girish Sharma,
+
+I noticed your work around compliance, risk. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Mercury Insurance is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Head of Data and AI engineering, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Mercury Insurance can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Samir Ouchani</strong> | CESI | score 65</summary><p><strong>Subject:</strong> CESI research quality workflow</p><pre>Hi Samir Ouchani,
+
+I noticed your work around research, verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what CESI is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Research Director, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How CESI can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Suniya Mohsin</strong> | InvoZone | score 65</summary><p><strong>Subject:</strong> InvoZone research quality workflow</p><pre>Hi Suniya Mohsin,
+
+I noticed your work around research, verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what InvoZone is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Entertainment XR Solutions-Director, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How InvoZone can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Ian Derbyshire</strong> | Baker Hughes | score 55</summary><p><strong>Subject:</strong> Baker Hughes research quality workflow</p><pre>Hi Ian Derbyshire,
+
+I noticed your work around research. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Baker Hughes is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Director of Research &amp; Technology, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Baker Hughes can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Karen O&#x27;Dea</strong> | Capgemini Engineering | score 55</summary><p><strong>Subject:</strong> Capgemini Engineering research quality workflow</p><pre>Hi Karen O&#x27;Dea,
+
+I noticed your work around research. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Capgemini Engineering is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Senior Director, Engineering, Research and Development Services, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Capgemini Engineering can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Marc Lyonnais</strong> | Ciena | score 55</summary><p><strong>Subject:</strong> Ciena research quality workflow</p><pre>Hi Marc Lyonnais,
+
+I noticed your work around research. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Ciena is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Director, External Research, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Ciena can operationalize verification-first research in high-stakes decisions</p></details><details class='email-block'><summary><strong>Miguel F Jimenez Sola</strong> | Yoti | score 55</summary><p><strong>Subject:</strong> Yoti research quality workflow</p><pre>Hi Miguel F Jimenez Sola,
+
+I noticed your work around verification. Teams in regulated research use MiroThinker to build verification-first analysis flows with auditable outputs.
+
+Given what Yoti is doing in this space, a verification-first pilot can make review outcomes more defensible.
+
+Given your role as Head of AI Services, a short pilot could show whether this reduces review cycles without sacrificing rigor.
+
+Open to a 15-minute walkthrough next week?
+
+Best,
+MiroThinker GTM Team</pre><p class='muted'><strong>QA note:</strong> approved on first pass</p><p class='muted'><strong>Blog angle:</strong> How Yoti can operationalize verification-first research in high-stakes decisions</p></details>
+    </div>
+
+    <div class='panel'>
+      <h2>What It Does Besides Email</h2>
+      <ul>
+        <li>Lead signal mining and normalization from raw source records.</li>
+        <li>Deterministic scoring, ranking, and explicit rejection logic.</li>
+        <li>Artifact dependency gating between upstream/downstream agents.</li>
+        <li>Quality control with retry rewrite path (anti-hype and personalization checks).</li>
+        <li>Dedupe reproducibility check across reruns.</li>
+        <li>Per-lead blog content-angle generation for content-led GTM.</li>
+        <li>Machine-auditable JSON outputs for every stage.</li>
+      </ul>
+    </div>
+
+    <div class='panel'>
+      <h2>How to Reproduce Real Results</h2>
+      <pre>python3 scripts/miro_gtm_agent_team.py
+python3 scripts/render_miro_workflow_drilldown.py
+python3 scripts/render_miro_full_audit_html.py</pre>
+      <p class='muted'>Main artifacts: <code>output/agent-team/06_manager_summary.json</code>, <code>output/agent-team/mirothinker-gtm-full-walkthrough.html</code></p>
+    </div>
+  </div>
+</body>
+</html>

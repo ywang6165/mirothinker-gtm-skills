@@ -1,0 +1,97 @@
+{
+  "artifact": "linkedin-outreach-sequences",
+  "created_at": "2026-04-13T02:40:14Z",
+  "count": 10,
+  "sequences": [
+    {
+      "lead_id": "6f5dce2d371d",
+      "name": "Keshav Ramani",
+      "company": "JPMorganChase",
+      "score": 75,
+      "connection_note": "Hi Keshav - saw your work at JPMorganChase around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Keshav. Curious how JPMorganChase currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "922f3d96c4fa",
+      "name": "Murtaza Cherawala",
+      "company": "Alexion Pharmaceuticals, Inc.",
+      "score": 75,
+      "connection_note": "Hi Murtaza - saw your work at Alexion Pharmaceuticals, Inc. around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Murtaza. Curious how Alexion Pharmaceuticals, Inc. currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "4e758c92a02c",
+      "name": "Steve Breen",
+      "company": "R\u00f6chling Medical",
+      "score": 75,
+      "connection_note": "Hi Steve - saw your work at R\u00f6chling Medical around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Steve. Curious how R\u00f6chling Medical currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "cb2ee79be912",
+      "name": "Zhitao Fan (Ph.D)",
+      "company": "GoTo Group",
+      "score": 75,
+      "connection_note": "Hi Zhitao - saw your work at GoTo Group around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Zhitao. Curious how GoTo Group currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "913f32957501",
+      "name": "Dimple R.",
+      "company": "Fitch Solutions",
+      "score": 65,
+      "connection_note": "Hi Dimple - saw your work at Fitch Solutions around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Dimple. Curious how Fitch Solutions currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "240a04293981",
+      "name": "Girish Sharma",
+      "company": "Mercury Insurance",
+      "score": 65,
+      "connection_note": "Hi Girish - saw your work at Mercury Insurance around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Girish. Curious how Mercury Insurance currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "7b9efd008e71",
+      "name": "Samir Ouchani",
+      "company": "CESI",
+      "score": 65,
+      "connection_note": "Hi Samir - saw your work at CESI around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Samir. Curious how CESI currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "be3702908020",
+      "name": "Suniya Mohsin",
+      "company": "InvoZone",
+      "score": 65,
+      "connection_note": "Hi Suniya - saw your work at InvoZone around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Suniya. Curious how InvoZone currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "91ce918018a7",
+      "name": "Ian Derbyshire",
+      "company": "Baker Hughes",
+      "score": 55,
+      "connection_note": "Hi Ian - saw your work at Baker Hughes around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Ian. Curious how Baker Hughes currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    },
+    {
+      "lead_id": "173839808caa",
+      "name": "Karen O'Dea",
+      "company": "Capgemini Engineering",
+      "score": 55,
+      "connection_note": "Hi Karen - saw your work at Capgemini Engineering around verification-heavy workflows.",
+      "followup_1": "Thanks for connecting, Karen. Curious how Capgemini Engineering currently validates high-stakes research outputs.",
+      "followup_2": "If useful, I can share a 1-page pilot plan with measurable quality/turnaround criteria."
+    }
+  ]
+}

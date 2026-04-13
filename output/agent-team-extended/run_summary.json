@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-04-13T02:40:14Z",
+  "system": "MiroThinker 12-agent GTM system",
+  "core_agents": 6,
+  "new_agents": 6,
+  "total_agents": 12,
+  "new_agent_status": {
+    "A7_oss_community_pipeline": "error",
+    "A8_benchmark_watchdog": "ok",
+    "A9_reddit_intent_radar": "ok",
+    "A10_hn_trend_radar": "ok",
+    "A11_icp_enrichment_resolver": "ok",
+    "A12_competitive_intel_synthesizer": "ok"
+  },
+  "key_counts": {
+    "core_accepted_leads": 17,
+    "core_drafts": 12,
+    "a7_top_prospects": 0,
+    "a8_threat_count": 3,
+    "a9_high_intent_posts": 18,
+    "a10_threads": 28,
+    "a11_enriched_count": 17,
+    "a12_high_threats": 0
+  },
+  "artifacts": {
+    "core_run_stdout": "output/agent-team-extended/core_run_stdout.json",
+    "agent7_oss_community_pipeline": "output/agent-team-extended/07_oss_community_pipeline.json",
+    "agent8_benchmark_watchdog": "output/agent-team-extended/08_benchmark_watchdog.json",
+    "agent9_reddit_intent_radar": "output/agent-team-extended/09_reddit_intent_radar.json",
+    "agent10_hn_trend_radar": "output/agent-team-extended/10_hn_trend_radar.json",
+    "agent11_icp_enrichment_resolver": "output/agent-team-extended/11_icp_enrichment_resolver.json",
+    "agent12_competitive_intel_synthesizer": "output/agent-team-extended/12_competitive_intel_synthesizer.json",
+    "dependency_graph": "output/agent-team-extended/dependencies.json",
+    "dependency_graph_html": "output/agent-team-extended/mirothinker-12-agent-graph.html",
+    "run_summary": "output/agent-team-extended/run_summary.json"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "agent": "Benchmark Signal Watchdog",
+  "timestamp": "2026-04-13T02:40:11Z",
+  "status": "ok",
+  "hn_hits": [
+    {
+      "keyword": "HLE benchmark LLM",
+      "title": "Launch HN: Aqua Voice (YC W24) \u2013 Voice-driven text editor",
+      "url": "",
+      "points": 716,
+      "comments": 244,
+      "created_at": "2024-03-26T14:53:52Z"
+    },
+    {
+      "keyword": "HLE benchmark LLM",
+      "title": "Launch HN: Codebuff (YC F24) \u2013 CLI tool that writes code for you",
+      "url": "",
+      "points": 285,
+      "comments": 239,
+      "created_at": "2024-11-07T17:06:28Z"
+    },
+    {
+      "keyword": "deep research benchmark agents",
+      "title": "Launch HN: Spine Swarm (YC S23) \u2013 AI agents that collaborate on a visual canvas",
+      "url": "https://www.getspine.ai/",
+      "points": 109,
+      "comments": 69,
+      "created_at": "2026-03-13T13:22:40Z"
+    },
+    {
+      "keyword": "deep research benchmark agents",
+      "title": "Show HN: Stockfisher \u2013\u2013 our automated Warren Buffett",
+      "url": "",
+      "points": 16,
+      "comments": 4,
+      "created_at": "2025-11-13T16:14:14Z"
+    },
+    {
+      "keyword": "deep research benchmark agents",
+      "title": "How to get even a \"quasi\" objective view of quality OAIdeepresearch vs. Gemini",
+      "url": "",
+      "points": 3,
+      "comments": 0,
+      "created_at": "2025-05-17T19:53:11Z"
+    },
+    {
+      "keyword": "deep research benchmark agents",
+      "title": "Manus: SOTA AI Agent on Gaia Benchmark, Beating OpenAI Deep Research",
+      "url": "https://manus.im/",
+      "points": 2,
+      "comments": 1,
+      "created_at": "2025-03-06T01:39:24Z"
+    },
+    {
+      "keyword": "HLE benchmark LLM",
+      "title": "Show HN: We needed a better way to choose LLMs",
+      "url": "https://miosn.com/",
+      "points": 2,
+      "comments": 0,
+      "created_at": "2025-04-09T14:41:44Z"
+    },
+    {
+      "keyword": "HLE benchmark LLM",
+      "title": "Cot Decoding \u2013 Eliciting Reasoning from LLMs",
+      "url": "",
+      "points": 2,
+      "comments": 0,
+      "created_at": "2024-09-24T05:06:37Z"
+    },
+    {
+      "keyword": "BrowseComp benchmark model",
+      "title": "Show HN: Kimi K2.5 (Agent Swarm, beats GPT-5) now on RouterLab (Swiss hosting)",
+      "url": "https://routerlab.ch/blog/kimi-k2-5",
+      "points": 1,
+      "comments": 0,
+      "created_at": "2026-01-27T15:21:01Z"
+    },
+    {
+      "keyword": "BrowseComp benchmark model",
+      "title": "Show HN: Infinate \u2013O(k)constant-time spatial attention for unlimited LLM context",
+      "url": "https://github.com/ch1pu/infinate",
+      "points": 1,
+      "comments": 0,
+      "created_at": "2026-01-21T21:24:28Z"
+    }
+  ],
+  "arxiv_papers": [
+    {
+      "title": "RIRF: Reasoning Image Restoration Framework",
+      "published": "2026-04-10T17:29:31Z",
+      "url": "https://arxiv.org/abs/2604.09511v1"
+    },
+    {
+      "title": "Process Reward Agents for Steering Knowledge-Intensive Reasoning",
+      "published": "2026-04-10T16:45:44Z",
+      "url": "https://arxiv.org/abs/2604.09482v1"
+    },
+    {
+      "title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
+      "published": "2026-04-10T16:17:44Z",
+      "url": "https://arxiv.org/abs/2604.09459v1"
+    },
+    {
+      "title": "Mind the Gap Between Spatial Reasoning and Acting! Step-by-Step Evaluation of Agents With Spatial-Gym",
+      "published": "2026-04-10T14:05:50Z",
+      "url": "https://arxiv.org/abs/2604.09338v1"
+    },
+    {
+      "title": "DRBENCHER: Can Your Agent Identify the Entity, Retrieve Its Properties and Do the Math?",
+      "published": "2026-04-10T12:07:22Z",
+      "url": "https://arxiv.org/abs/2604.09251v1"
+    },
+    {
+      "title": "MAG-3D: Multi-Agent Grounded Reasoning for 3D Understanding",
+      "published": "2026-04-10T09:51:42Z",
+      "url": "https://arxiv.org/abs/2604.09167v1"
+    },
+    {
+      "title": "CORA: Conformal Risk-Controlled Agents for Safeguarded Mobile GUI Automation",
+      "published": "2026-04-10T09:41:21Z",
+      "url": "https://arxiv.org/abs/2604.09155v1"
+    },
+    {
+      "title": "PilotBench: A Benchmark for General Aviation Agents with Safety Constraints",
+      "published": "2026-04-10T05:48:38Z",
+      "url": "https://arxiv.org/abs/2604.08987v1"
+    }
+  ],
+  "threat_count": 3,
+  "threats": [
+    {
+      "keyword": "HLE benchmark LLM",
+      "title": "Launch HN: Aqua Voice (YC W24) \u2013 Voice-driven text editor",
+      "url": "",
+      "points": 716,
+      "comments": 244,
+      "created_at": "2024-03-26T14:53:52Z"
+    },
+    {
+      "keyword": "HLE benchmark LLM",
+      "title": "Launch HN: Codebuff (YC F24) \u2013 CLI tool that writes code for you",
+      "url": "",
+      "points": 285,
+      "comments": 239,
+      "created_at": "2024-11-07T17:06:28Z"
+    },
+    {
+      "keyword": "deep research benchmark agents",
+      "title": "Launch HN: Spine Swarm (YC S23) \u2013 AI agents that collaborate on a visual canvas",
+      "url": "https://www.getspine.ai/",
+      "points": 109,
+      "comments": 69,
+      "created_at": "2026-03-13T13:22:40Z"
+    }
+  ],
+  "positioning_actions": [
+    "Publish benchmark-context post with verification-first framing when threat_count > 0.",
+    "Update outbound messaging snippets with latest benchmark language."
+  ]
+}

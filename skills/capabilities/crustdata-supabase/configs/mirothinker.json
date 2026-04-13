@@ -1,0 +1,67 @@
+{
+  "client_name": "mirothinker",
+  "search_config_name": "mirothinker-research-leads",
+  "icp_segment": "verification research leaders",
+  "filters": [
+    {
+      "filter_type": "CURRENT_TITLE",
+      "type": "in",
+      "value": [
+        "Head of Research",
+        "VP Research",
+        "Director of Research",
+        "Head of AI",
+        "Head of AI/ML",
+        "Chief Data Officer",
+        "VP Data Science",
+        "Head of Knowledge Engineering",
+        "Director of Knowledge Management",
+        "Research Director"
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "filter_type": "REGION",
+      "type": "in",
+      "value": [
+        "United States",
+        "Canada",
+        "Singapore",
+        "United Kingdom"
+      ]
+    },
+    {
+      "filter_type": "COMPANY_HEADCOUNT",
+      "type": "in",
+      "value": [
+        "201-500",
+        "501-1,000",
+        "1,001-5,000",
+        "5,001-10,000",
+        "10,001+"
+      ]
+    },
+    {
+      "filter_type": "SENIORITY_LEVEL",
+      "type": "in",
+      "value": [
+        "Vice President",
+        "Director",
+        "CXO"
+      ]
+    },
+    {
+      "filter_type": "KEYWORD",
+      "type": "in",
+      "value": [
+        "verification"
+      ]
+    }
+  ],
+  "post_processing": {
+    "strict_title_and_company_match": false,
+    "exclude_names": []
+  },
+  "max_pages": 5,
+  "mode": "standard"
+}

@@ -1,0 +1,34 @@
+{
+  "artifact": "ads-test-matrix",
+  "created_at": "2026-04-13T02:40:14Z",
+  "tests": [
+    {
+      "segment": "Financial services risk/compliance teams",
+      "pain_angle": "Need defensible, auditable research output quality",
+      "message_hypothesis": "Verification-first workflow reduces review risk and rework",
+      "channel": "LinkedIn sponsored content",
+      "success_metric": "Qualified demo requests from target titles"
+    },
+    {
+      "segment": "Audit and assurance groups",
+      "pain_angle": "Need defensible, auditable research output quality",
+      "message_hypothesis": "Verification-first workflow reduces review risk and rework",
+      "channel": "LinkedIn sponsored content",
+      "success_metric": "Qualified demo requests from target titles"
+    },
+    {
+      "segment": "Pharma and regulated R&D",
+      "pain_angle": "Need defensible, auditable research output quality",
+      "message_hypothesis": "Verification-first workflow reduces review risk and rework",
+      "channel": "LinkedIn sponsored content",
+      "success_metric": "Qualified demo requests from target titles"
+    },
+    {
+      "segment": "Legal research and due-diligence operations",
+      "pain_angle": "Need defensible, auditable research output quality",
+      "message_hypothesis": "Verification-first workflow reduces review risk and rework",
+      "channel": "LinkedIn sponsored content",
+      "success_metric": "Qualified demo requests from target titles"
+    }
+  ]
+}

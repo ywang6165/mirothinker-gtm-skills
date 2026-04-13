@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiroThinker 6-Agent GTM Verification Report</title>
+  <style>
+    body { font-family: Inter, Arial, sans-serif; background:#f4f7fb; color:#0f172a; margin:0; }
+    .wrap { max-width:1200px; margin:0 auto; padding:24px; }
+    .hero, .card, .panel { background:#fff; border:1px solid #dbe3ef; border-radius:16px; padding:18px; margin-bottom:14px; }
+    .cards { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:12px; }
+    .chain { font-weight:700; color:#0f766e; }
+    table { width:100%; border-collapse:collapse; font-size:14px; }
+    th, td { border-bottom:1px solid #e2e8f0; padding:10px; text-align:left; vertical-align:top; }
+    th { background:#0f172a; color:#f8fafc; }
+    .muted { color:#475569; font-size:13px; }
+    code { background:#f1f5f9; padding:2px 5px; border-radius:6px; }
+    @media (max-width: 900px) { .cards { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>MiroThinker GTM Agent Team - Verification Report</h1>
+      <p class="muted">Run timestamp: 2026-04-13T02:40:14Z | Source CSV: <code>skills/capabilities/crustdata-supabase/output/mirothinker-20260412_1544.csv</code></p>
+      <p class="chain">ICP Strategist -> Signal Miner -> Lead Scorer -> Personalization Writer -> QA/Approver -> GTM Manager</p>
+    </div>
+
+    <div class="cards">
+      <div class="card"><strong>Agent Count</strong><div>6</div><div class="muted">6 core agents executed</div></div>
+      <div class="card"><strong>Accepted Leads</strong><div>17</div><div class="muted">Passed score threshold</div></div>
+      <div class="card"><strong>Rejected Leads</strong><div>8</div><div class="muted">Blocked by score / ICP fit</div></div>
+      <div class="card"><strong>Drafts Created</strong><div>12</div><div class="muted">Personalized outreach + blog angles</div></div>
+      <div class="card"><strong>QA Approved</strong><div>12</div><div class="muted">Final assets approved</div></div>
+      <div class="card"><strong>QA Rejected</strong><div>0</div><div class="muted">Explicit quality gating</div></div>
+    </div>
+
+    <div class="panel">
+      <h2>Validation Scenarios</h2>
+      <ul>
+        <li>Happy path: <strong>pass</strong></li>
+        <li>Quality gate path: <strong>pass</strong></li>
+        <li>Dependency proof: <strong>pass</strong></li>
+        <li>Dedupe rerun: <strong>pass</strong></li>
+      </ul>
+      <p class="muted">Dedupe second-run new leads: 0 | Retry count: 1</p>
+    </div>
+
+    <div class="panel">
+      <h2>Approved Outreach Assets</h2>
+      <table>
+        <thead><tr><th>Name</th><th>Company</th><th>Score</th><th>Subject</th><th>QA note</th></tr></thead>
+        <tbody>
+          <tr><td>Keshav Ramani</td><td>JPMorganChase</td><td>75</td><td>JPMorganChase research quality workflow</td><td>approved after retry (missing prospect name; missing company context; email too short; contains hype wording)</td></tr>
+<tr><td>Murtaza Cherawala</td><td>Alexion Pharmaceuticals, Inc.</td><td>75</td><td>Alexion Pharmaceuticals, Inc. research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Steve Breen</td><td>Röchling Medical</td><td>75</td><td>Röchling Medical research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Zhitao Fan (Ph.D)</td><td>GoTo Group</td><td>75</td><td>GoTo Group research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Dimple R.</td><td>Fitch Solutions</td><td>65</td><td>Fitch Solutions research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Girish Sharma</td><td>Mercury Insurance</td><td>65</td><td>Mercury Insurance research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Samir Ouchani</td><td>CESI</td><td>65</td><td>CESI research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Suniya Mohsin</td><td>InvoZone</td><td>65</td><td>InvoZone research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Ian Derbyshire</td><td>Baker Hughes</td><td>55</td><td>Baker Hughes research quality workflow</td><td>approved on first pass</td></tr>
+<tr><td>Karen O&#x27;Dea</td><td>Capgemini Engineering</td><td>55</td><td>Capgemini Engineering research quality workflow</td><td>approved on first pass</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>Artifact Files</h2>
+      <ul>
+        <li><code>output/agent-team/01_icp_profile.json</code></li>
+        <li><code>output/agent-team/02_signal_miner.json</code></li>
+        <li><code>output/agent-team/03_lead_scoring.json</code></li>
+        <li><code>output/agent-team/04_personalization_drafts.json</code></li>
+        <li><code>output/agent-team/05_qa_review.json</code></li>
+        <li><code>output/agent-team/06_manager_summary.json</code></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

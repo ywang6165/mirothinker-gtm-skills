@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>MiroThinker Agent Functional Map</title>
+<style>
+body{font-family:Inter,Arial,sans-serif;margin:0;background:#f6f8fc;color:#0f172a}
+.wrap{max-width:1300px;margin:0 auto;padding:24px}
+.panel{background:#fff;border:1px solid #dbe3ef;border-radius:14px;padding:16px;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.k{background:#fff;border:1px solid #dbe3ef;border-radius:10px;padding:10px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{background:#fff;border:1px solid #dbe3ef;border-radius:12px;padding:12px}
+.tag{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:4px 8px;margin-bottom:8px}
+.tag.core{background:#dbeafe;color:#1d4ed8}
+.tag.new{background:#dcfce7;color:#166534}
+pre{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px;white-space:pre-wrap}
+.muted{color:#475569;font-size:13px}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));} .cards{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <div class='panel'>
+    <h1>MiroThinker GTM Agent Functional Map (12 Agents)</h1>
+    <p class='muted'>This page renames agents by functionality and shows exact dependency relationships.</p>
+    <p><strong>Important:</strong> The 25-lead count is from the current CrustData batch. The added 6 agents mainly add signal/intel/enrichment channels; they do not replace the source lead batch size by themselves.</p>
+  </div>
+
+  <div class='grid'>
+    <div class='k'><strong>Total agents</strong><div>12</div></div>
+    <div class='k'><strong>Core agents</strong><div>6</div></div>
+    <div class='k'><strong>New agents</strong><div>6</div></div>
+    <div class='k'><strong>Dependency edges</strong><div>15</div></div>
+    <div class='k'><strong>Core accepted leads</strong><div>17</div></div>
+    <div class='k'><strong>Community prospects (A7)</strong><div>0</div></div>
+    <div class='k'><strong>Reddit high-intent (A9)</strong><div>18</div></div>
+    <div class='k'><strong>HN threads (A10)</strong><div>28</div></div>
+  </div>
+
+  <div class='panel'>
+    <h2>Dependency Graph (Mermaid)</h2>
+    <pre>graph TD
+  A1[A1] --> A2[A2]
+  A2[A2] --> A3[A3]
+  A3[A3] --> A4[A4]
+  A4[A4] --> A5[A5]
+  A5[A5] --> A6[A6]
+  A7[A7] --> A2[A2]
+  A9[A9] --> A2[A2]
+  A10[A10] --> A8[A8]
+  A8[A8] --> A12[A12]
+  A10[A10] --> A12[A12]
+  A3[A3] --> A11[A11]
+  A11[A11] --> A4[A4]
+  A12[A12] --> A4[A4]
+  A7[A7] --> A11[A11]
+  A6[A6] --> A12[A12]</pre>
+  </div>
+
+  <div class='panel'>
+    <h2>Agent Names + Functionality + Dependencies</h2>
+    <div class='cards'>
+      
+        <article class='card'>
+          <div class='tag core'>Core</div>
+          <h3>A1 — ICP Strategist</h3>
+          <p><strong>Main functionality:</strong> Defines ICP policy: segments, title rules, keywords, exclusions, and threshold.</p>
+          <p><strong>Input:</strong> Source lead count + product positioning context</p>
+          <p><strong>Output:</strong> ICP policy artifact used by signal/scoring agents</p>
+          <p><strong>Depends on:</strong> None (source agent)</p>
+          <p><strong>Feeds:</strong> A2</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag core'>Core</div>
+          <h3>A2 — Signal Miner</h3>
+          <p><strong>Main functionality:</strong> Transforms raw leads into normalized signal features.</p>
+          <p><strong>Input:</strong> Source leads + ICP policy + external source adapters (A7/A9)</p>
+          <p><strong>Output:</strong> Per-lead structured signals (keywords, role, region, profile)</p>
+          <p><strong>Depends on:</strong> A1, A7, A9</p>
+          <p><strong>Feeds:</strong> A3</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag core'>Core</div>
+          <h3>A3 — Lead Scorer</h3>
+          <p><strong>Main functionality:</strong> Applies deterministic scoring and acceptance/rejection logic.</p>
+          <p><strong>Input:</strong> Signal records from A2</p>
+          <p><strong>Output:</strong> Accepted and rejected lead lists with reasons and scores</p>
+          <p><strong>Depends on:</strong> A2</p>
+          <p><strong>Feeds:</strong> A4, A11</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag core'>Core</div>
+          <h3>A4 — Personalization Writer</h3>
+          <p><strong>Main functionality:</strong> Generates personalized email drafts and blog-angle hooks.</p>
+          <p><strong>Input:</strong> Accepted leads + enrichment (A11) + competitive narrative cues (A12)</p>
+          <p><strong>Output:</strong> Outreach drafts and content angles</p>
+          <p><strong>Depends on:</strong> A3, A11, A12</p>
+          <p><strong>Feeds:</strong> A5</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag core'>Core</div>
+          <h3>A5 — QA Approver</h3>
+          <p><strong>Main functionality:</strong> Quality-gates drafts and retries low-quality content once.</p>
+          <p><strong>Input:</strong> Drafts from A4</p>
+          <p><strong>Output:</strong> Approved/rejected assets with QA notes</p>
+          <p><strong>Depends on:</strong> A4</p>
+          <p><strong>Feeds:</strong> A6</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag core'>Core</div>
+          <h3>A6 — GTM Orchestrator</h3>
+          <p><strong>Main functionality:</strong> Runs chain control, validation checks, and publishes run artifacts.</p>
+          <p><strong>Input:</strong> All upstream core outputs</p>
+          <p><strong>Output:</strong> Run summary, validation status, and artifact index</p>
+          <p><strong>Depends on:</strong> A5</p>
+          <p><strong>Feeds:</strong> A12</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag new'>New</div>
+          <h3>A7 — OSS Community Pipeline</h3>
+          <p><strong>Main functionality:</strong> Scans GitHub stargazers and ranks community prospects.</p>
+          <p><strong>Input:</strong> GitHub stargazers + profile enrichment</p>
+          <p><strong>Output:</strong> Community prospect list (tiered) feeding A2/A11</p>
+          <p><strong>Depends on:</strong> None (source agent)</p>
+          <p><strong>Feeds:</strong> A2, A11</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag new'>New</div>
+          <h3>A8 — Benchmark Signal Watchdog</h3>
+          <p><strong>Main functionality:</strong> Monitors benchmark chatter and recent benchmark papers.</p>
+          <p><strong>Input:</strong> HN benchmark queries + arXiv feed</p>
+          <p><strong>Output:</strong> Threat/event signals for positioning via A12</p>
+          <p><strong>Depends on:</strong> A10</p>
+          <p><strong>Feeds:</strong> A12</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag new'>New</div>
+          <h3>A9 — Reddit Intent Radar</h3>
+          <p><strong>Main functionality:</strong> Finds high-intent Reddit threads from problem/verification language.</p>
+          <p><strong>Input:</strong> Reddit search results by GTM intent queries</p>
+          <p><strong>Output:</strong> High-intent community signals feeding A2</p>
+          <p><strong>Depends on:</strong> None (source agent)</p>
+          <p><strong>Feeds:</strong> A2</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag new'>New</div>
+          <h3>A10 — HackerNews Trend Radar</h3>
+          <p><strong>Main functionality:</strong> Collects and deduplicates HN trend threads by strategic keywords.</p>
+          <p><strong>Input:</strong> HN Algolia keyword searches</p>
+          <p><strong>Output:</strong> Thread-level trend signals feeding A8/A12</p>
+          <p><strong>Depends on:</strong> None (source agent)</p>
+          <p><strong>Feeds:</strong> A8, A12</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag new'>New</div>
+          <h3>A11 — ICP Enrichment Resolver</h3>
+          <p><strong>Main functionality:</strong> Enriches accepted leads with persona/domain/link fields.</p>
+          <p><strong>Input:</strong> Accepted leads (A3) + source CSV + A7 context</p>
+          <p><strong>Output:</strong> Enriched profile records feeding A4</p>
+          <p><strong>Depends on:</strong> A3, A7</p>
+          <p><strong>Feeds:</strong> A4</p>
+        </article>
+        
+        <article class='card'>
+          <div class='tag new'>New</div>
+          <h3>A12 — Competitive Intel Synthesizer</h3>
+          <p><strong>Main functionality:</strong> Builds competitor threat and counter-positioning intelligence.</p>
+          <p><strong>Input:</strong> Watchdog signals (A8/A10) + orchestration context (A6)</p>
+          <p><strong>Output:</strong> Competitive narratives feeding A4 and strategy</p>
+          <p><strong>Depends on:</strong> A8, A10, A6</p>
+          <p><strong>Feeds:</strong> A4</p>
+        </article>
+        
+    </div>
+  </div>
+</div>
+</body>
+</html>

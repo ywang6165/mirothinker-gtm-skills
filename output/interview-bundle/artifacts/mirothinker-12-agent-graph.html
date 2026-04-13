@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>MiroThinker 12-Agent Dependency Graph</title>
+<style>
+body { font-family: Inter, Arial, sans-serif; margin:0; background:#f6f8fc; color:#0f172a; }
+.wrap { max-width:1100px; margin:0 auto; padding:24px; }
+.card { background:#fff; border:1px solid #dbe3ef; border-radius:12px; padding:16px; margin-bottom:12px; }
+.grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; }
+.k { background:#fff; border:1px solid #dbe3ef; border-radius:10px; padding:10px; }
+pre { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px; white-space:pre-wrap; }
+table { width:100%; border-collapse:collapse; font-size:14px; } th,td { border-bottom:1px solid #e2e8f0; padding:8px; text-align:left; } th { background:#0f172a; color:#fff; }
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <div class='card'>
+    <h1>MiroThinker GTM - 12 Agent System</h1>
+    <p>Existing core (A1-A6) + new compatibility agents (A7-A12) integrated.</p>
+  </div>
+  <div class='grid'>
+    <div class='k'><strong>Total Agents</strong><div>12</div></div>
+    <div class='k'><strong>Total Dependencies</strong><div>15</div></div>
+    <div class='k'><strong>Run Timestamp</strong><div>2026-04-13T02:40:14Z</div></div>
+    <div class='k'><strong>Artifacts</strong><div>10</div></div>
+  </div>
+  <div class='card'>
+    <h2>Mermaid Graph</h2>
+    <pre>graph TD
+  A1[A1] --> A2[A2]
+  A2[A2] --> A3[A3]
+  A3[A3] --> A4[A4]
+  A4[A4] --> A5[A5]
+  A5[A5] --> A6[A6]
+  A7[A7] --> A2[A2]
+  A9[A9] --> A2[A2]
+  A10[A10] --> A8[A8]
+  A8[A8] --> A12[A12]
+  A10[A10] --> A12[A12]
+  A3[A3] --> A11[A11]
+  A11[A11] --> A4[A4]
+  A12[A12] --> A4[A4]
+  A7[A7] --> A11[A11]
+  A6[A6] --> A12[A12]</pre>
+  </div>
+  <div class='card'>
+    <h2>Dependency Table</h2>
+    <table><thead><tr><th>From</th><th>To</th></tr></thead><tbody><tr><td>A1</td><td>A2</td></tr><tr><td>A2</td><td>A3</td></tr><tr><td>A3</td><td>A4</td></tr><tr><td>A4</td><td>A5</td></tr><tr><td>A5</td><td>A6</td></tr><tr><td>A7</td><td>A2</td></tr><tr><td>A9</td><td>A2</td></tr><tr><td>A10</td><td>A8</td></tr><tr><td>A8</td><td>A12</td></tr><tr><td>A10</td><td>A12</td></tr><tr><td>A3</td><td>A11</td></tr><tr><td>A11</td><td>A4</td></tr><tr><td>A12</td><td>A4</td></tr><tr><td>A7</td><td>A11</td></tr><tr><td>A6</td><td>A12</td></tr></tbody></table>
+  </div>
+</div>
+</body>
+</html>

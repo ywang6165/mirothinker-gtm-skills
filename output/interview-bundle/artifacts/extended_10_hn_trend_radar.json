@@ -1,0 +1,216 @@
+{
+  "agent": "HackerNews Trend Radar",
+  "timestamp": "2026-04-13T02:40:14Z",
+  "status": "ok",
+  "keywords": [
+    "MiroThinker",
+    "deep research agent",
+    "verification agent",
+    "tool-augmented reasoning",
+    "GAIA benchmark",
+    "BrowseComp"
+  ],
+  "total_threads": 28,
+  "threads": [
+    {
+      "keyword": "deep research agent",
+      "title": "Show HN: Building a Deep Research Agent Using MCP-Agent",
+      "url": "https://thealliance.ai/blog/building-a-deep-research-agent-using-mcp-agent",
+      "hn_url": "https://news.ycombinator.com/item?id=45199256",
+      "points": 91,
+      "comments": 20,
+      "author": "saqadri",
+      "created_at": "2025-09-10T15:36:20Z"
+    },
+    {
+      "keyword": "verification agent",
+      "title": "Launch HN: RunRL (YC X25) \u2013 Reinforcement learning as a service",
+      "url": "https://runrl.com",
+      "hn_url": "https://news.ycombinator.com/item?id=45277704",
+      "points": 71,
+      "comments": 22,
+      "author": "ag8",
+      "created_at": "2025-09-17T16:13:00Z"
+    },
+    {
+      "keyword": "GAIA benchmark",
+      "title": "Meta: Gaia - A Benchmark for General AI Assistants",
+      "url": "https://arxiv.org/abs/2311.12983",
+      "hn_url": "https://news.ycombinator.com/item?id=38388990",
+      "points": 36,
+      "comments": 8,
+      "author": "georgehill",
+      "created_at": "2023-11-23T03:43:15Z"
+    },
+    {
+      "keyword": "deep research agent",
+      "title": "A Deep Research Agent for Curating Vision Datasets",
+      "url": "https://arxiv.org/abs/2509.22631",
+      "hn_url": "https://news.ycombinator.com/item?id=45409742",
+      "points": 12,
+      "comments": 0,
+      "author": "barthelomew",
+      "created_at": "2025-09-29T01:59:05Z"
+    },
+    {
+      "keyword": "deep research agent",
+      "title": "Building Deep Research Agent from Scratch",
+      "url": "https://www.newsletter.swirlai.com/p/building-deep-research-agent-from",
+      "hn_url": "https://news.ycombinator.com/item?id=43331723",
+      "points": 10,
+      "comments": 3,
+      "author": "AurimasGr",
+      "created_at": "2025-03-11T12:22:26Z"
+    },
+    {
+      "keyword": "BrowseComp",
+      "title": "Show HN: Calling tools w/ Python improves LLM perf. vs MCP (77.1% on BrowseComp)",
+      "url": "https://www.symbolica.ai/blog/beyond-code-mode-agentica?theme=dark",
+      "hn_url": "https://news.ycombinator.com/item?id=46287394",
+      "points": 10,
+      "comments": 0,
+      "author": "charlielidbury",
+      "created_at": "2025-12-16T11:41:34Z"
+    },
+    {
+      "keyword": "deep research agent",
+      "title": "Code Researcher: Deep Research Agent for Large Systems Code and Commit History",
+      "url": "https://www.microsoft.com/en-us/research/publication/code-researcher-deep-research-agent-for-large-systems-code-and-commit-history/",
+      "hn_url": "https://news.ycombinator.com/item?id=44316120",
+      "points": 7,
+      "comments": 0,
+      "author": "handfuloflight",
+      "created_at": "2025-06-19T06:48:43Z"
+    },
+    {
+      "keyword": "GAIA benchmark",
+      "title": "Show HN: A high-level search agent",
+      "url": "https://www.gensee.ai/tooling.html",
+      "hn_url": "https://news.ycombinator.com/item?id=45054707",
+      "points": 7,
+      "comments": 0,
+      "author": "bobby_zhu",
+      "created_at": "2025-08-28T17:23:12Z"
+    },
+    {
+      "keyword": "verification agent",
+      "title": "Zenflow: Free desktop AI Orchestration app with multi-agent verification",
+      "url": "https://zencoder.ai/zenflow",
+      "hn_url": "https://news.ycombinator.com/item?id=46291237",
+      "points": 6,
+      "comments": 5,
+      "author": "shcheklein",
+      "created_at": "2025-12-16T17:18:30Z"
+    },
+    {
+      "keyword": "deep research agent",
+      "title": "Show HN: Deep research agent that follows every link (up to 10k) and summarizes",
+      "url": "https://graphthem.com/",
+      "hn_url": "https://news.ycombinator.com/item?id=43934562",
+      "points": 6,
+      "comments": 2,
+      "author": "vignesh_warar",
+      "created_at": "2025-05-09T07:27:03Z"
+    },
+    {
+      "keyword": "BrowseComp",
+      "title": "BrowseComp: A Benchmark for Browsing Agents",
+      "url": "https://openai.com/index/browsecomp",
+      "hn_url": "https://news.ycombinator.com/item?id=43646504",
+      "points": 5,
+      "comments": 0,
+      "author": "meetpateltech",
+      "created_at": "2025-04-10T18:02:10Z"
+    },
+    {
+      "keyword": "deep research agent",
+      "title": "OpenAI's Deep Research Agent Is Coming for White-Collar Work",
+      "url": "https://www.wired.com/story/openais-deep-research-agent-is-coming-for-white-collar-work/",
+      "hn_url": "https://news.ycombinator.com/item?id=43454002",
+      "points": 4,
+      "comments": 1,
+      "author": "bookofjoe",
+      "created_at": "2025-03-23T16:38:48Z"
+    },
+    {
+      "keyword": "GAIA benchmark",
+      "title": "Show HN: Raccoon AI \u2013 Collaborative AI Agent for Anything",
+      "url": "https://raccoonai.tech",
+      "hn_url": "https://news.ycombinator.com/item?id=47355049",
+      "points": 3,
+      "comments": 2,
+      "author": "scorchy38",
+      "created_at": "2026-03-12T18:20:05Z"
+    },
+    {
+      "keyword": "verification agent",
+      "title": "An agentic verification loop to stop LLMs from faking tests",
+      "url": "https://github.com/tzachbon/smart-ralph/pull/128",
+      "hn_url": "https://news.ycombinator.com/item?id=47618164",
+      "points": 3,
+      "comments": 1,
+      "author": "malka666",
+      "created_at": "2026-04-02T18:20:42Z"
+    },
+    {
+      "keyword": "BrowseComp",
+      "title": "Eval awareness in Claude Opus 4.6's BrowseComp performance",
+      "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
+      "hn_url": "https://news.ycombinator.com/item?id=47297588",
+      "points": 3,
+      "comments": 0,
+      "author": "GaggiX",
+      "created_at": "2026-03-08T14:24:20Z"
+    },
+    {
+      "keyword": "verification agent",
+      "title": "Show HN: AgentThreads \u2013 Stack Overflow for AI Agents",
+      "url": "https://agentthreads.dev",
+      "hn_url": "https://news.ycombinator.com/item?id=47230810",
+      "points": 2,
+      "comments": 1,
+      "author": "rodrigocava",
+      "created_at": "2026-03-03T11:11:27Z"
+    },
+    {
+      "keyword": "GAIA benchmark",
+      "title": "Manus: SOTA AI Agent on Gaia Benchmark, Beating OpenAI Deep Research",
+      "url": "https://manus.im/",
+      "hn_url": "https://news.ycombinator.com/item?id=43275243",
+      "points": 2,
+      "comments": 1,
+      "author": "lineudemonia",
+      "created_at": "2025-03-06T01:39:24Z"
+    },
+    {
+      "keyword": "verification agent",
+      "title": "Show HN: KYC Verification Process Automation Using Agentic AI",
+      "url": "https://www.youtube.com/watch?v=fPlcnkUhQTQ",
+      "hn_url": "https://news.ycombinator.com/item?id=47437910",
+      "points": 2,
+      "comments": 0,
+      "author": "SimplAI_ai",
+      "created_at": "2026-03-19T12:04:57Z"
+    },
+    {
+      "keyword": "GAIA benchmark",
+      "title": "New LLM Agent writing actions in Python code tops the GAIA agent benchmark",
+      "url": "https://huggingface.co/blog/beating-gaia",
+      "hn_url": "https://news.ycombinator.com/item?id=40846734",
+      "points": 2,
+      "comments": 0,
+      "author": "aubanel",
+      "created_at": "2024-07-01T15:27:41Z"
+    },
+    {
+      "keyword": "BrowseComp",
+      "title": "Eval awareness in Claude Opus 4.6's BrowseComp performance",
+      "url": "https://www.anthropic.com/engineering/eval-awareness-browsecomp",
+      "hn_url": "https://news.ycombinator.com/item?id=47280942",
+      "points": 2,
+      "comments": 0,
+      "author": "gcampbell",
+      "created_at": "2026-03-06T20:55:46Z"
+    }
+  ]
+}
