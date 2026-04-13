@@ -73,6 +73,34 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding='utf-8')
 
 
+def write_csv(path: Path, rows: List[Dict], field_order: List[str] | None = None) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not rows:
+        headers = field_order or []
+        with path.open('w', newline='', encoding='utf-8') as fh:
+            writer = csv.DictWriter(fh, fieldnames=headers)
+            writer.writeheader()
+        return
+
+    headers = field_order or list(rows[0].keys())
+    with path.open('w', newline='', encoding='utf-8') as fh:
+        writer = csv.DictWriter(fh, fieldnames=headers, extrasaction='ignore')
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+
+
+def recover_previous_artifact(path: Path, current_payload: Dict) -> Dict:
+    """Use previous successful artifact when live fetch fails."""
+    if current_payload.get('status') != 'error' or not path.exists():
+        return current_payload
+    prev = read_json(path)
+    prev['status'] = 'fallback'
+    prev['fallback_reason'] = current_payload.get('error', 'unknown error')
+    prev['fallback_at'] = now_iso()
+    return prev
+
 def to_repo_rel(path: Path, repo_root: Path) -> str:
     try:
         return path.resolve().relative_to(repo_root.resolve()).as_posix()
@@ -160,7 +188,8 @@ def agent7_oss_community_pipeline(env: Dict[str, str]) -> Dict:
         return min(score, 10), reasons
 
     enriched = []
-    for row in stargazers[:45]:
+    # Keep all fetched stargazers (not a small debug slice) to maximize lead volume.
+    for row in stargazers:
         login = row.get('login')
         if not login or login in exclude:
             continue
@@ -199,6 +228,7 @@ def agent7_oss_community_pipeline(env: Dict[str, str]) -> Dict:
         'enriched_profiles': len(enriched),
         'tiers': dict(counts),
         'top_prospects': enriched[:20],
+        'all_prospects': enriched,
     }
 
 
@@ -271,6 +301,8 @@ def agent9_reddit_intent_radar() -> Dict:
     queries = [
         'deep research agent', 'ai verification', 'enterprise llm compliance',
         'research workflow automation', 'benchmark reasoning model',
+        'ai audit trail', 'llm governance', 'agent reliability',
+        'hallucination mitigation', 'compliance ai workflow',
     ]
     headers = {'User-Agent': 'miro-gtm-extended-agent/1.0'}
     posts = []
@@ -319,7 +351,266 @@ def agent9_reddit_intent_radar() -> Dict:
         'status': 'ok',
         'queries': queries,
         'total_posts': len(out),
-        'high_intent_posts': [p for p in out if p['signal_score'] >= 4][:20],
+        'high_intent_posts': [p for p in out if p['signal_score'] >= 4][:50],
+        'all_ranked_posts': out[:200],
+    }
+
+
+
+
+
+def normalize_email(raw: str) -> str:
+    email = (raw or '').strip().lower()
+    if not email or '@' not in email or ' ' in email:
+        return ''
+    local, _, domain = email.partition('@')
+    if not local or '.' not in domain:
+        return ''
+    return email
+
+
+def normalize_url(raw: str) -> str:
+    url = (raw or '').strip()
+    if not url:
+        return ''
+    return url.split('?', 1)[0].rstrip('/')
+
+
+def build_core_contact_map(core_source_csv: Path) -> Dict[str, Dict[str, str]]:
+    out: Dict[str, Dict[str, str]] = {}
+    if not core_source_csv.exists():
+        return out
+
+    with core_source_csv.open('r', encoding='utf-8', newline='') as fh:
+        reader = csv.DictReader(fh)
+        for row in reader:
+            key = '|'.join([
+                (row.get('Name') or '').strip().lower(),
+                (row.get('Company') or '').strip().lower(),
+                (row.get('Title') or '').strip().lower(),
+            ])
+            out[key] = {
+                'email': normalize_email(row.get('Email') or ''),
+                'linkedin_url': normalize_url(row.get('Person LinkedIn URL') or ''),
+            }
+    return out
+
+
+def identity_candidates(rec: Dict) -> List[Tuple[str, str]]:
+    linkedin = normalize_url(rec.get('linkedin_url') or '')
+    email = normalize_email(rec.get('email') or '')
+    name = (rec.get('name') or '').strip().lower()
+    company = (rec.get('company') or '').strip().lower()
+    name_company = f"{name}|{company}" if name or company else ''
+
+    out: List[Tuple[str, str]] = []
+    if linkedin:
+        out.append(('linkedin_url', linkedin))
+    if email:
+        out.append(('email', email))
+    if name_company:
+        out.append(('name_company', name_company))
+    return out
+
+
+def merge_record(existing: Dict, incoming: Dict) -> Dict:
+    merged = dict(existing)
+
+    # Fill richer contact fields.
+    if not merged.get('email') and incoming.get('email'):
+        merged['email'] = incoming['email']
+    if not merged.get('linkedin_url') and incoming.get('linkedin_url'):
+        merged['linkedin_url'] = incoming['linkedin_url']
+
+    # Keep highest signal score.
+    merged['signal_score'] = max(int(merged.get('signal_score') or 0), int(incoming.get('signal_score') or 0))
+
+    # Preserve provenance from all contributing sources.
+    srcs = set(merged.get('provenance_sources') or [merged.get('source')])
+    srcs.update(incoming.get('provenance_sources') or [incoming.get('source')])
+    merged['provenance_sources'] = sorted(s for s in srcs if s)
+
+    merged_meta = dict(merged.get('metadata') or {})
+    incoming_meta = dict(incoming.get('metadata') or {})
+    for k, v in incoming_meta.items():
+        if k not in merged_meta or not merged_meta[k]:
+            merged_meta[k] = v
+    merged['metadata'] = merged_meta
+
+    return merged
+
+
+def build_unified_lead_queue(core_signals: Dict, a7: Dict, a9: Dict, core_source_csv: Path) -> Dict:
+    """Merge early with deterministic precedence: linkedin > email > name+company."""
+    core_contact = build_core_contact_map(core_source_csv)
+
+    records_by_id: Dict[str, Dict] = {}
+    id_by_identity: Dict[Tuple[str, str], str] = {}
+
+    def ingest(candidate: Dict) -> None:
+        # deterministic identity precedence
+        ids = identity_candidates(candidate)
+        existing_id = ''
+        for ident in ids:
+            existing_id = id_by_identity.get(ident, '')
+            if existing_id:
+                break
+
+        if not existing_id:
+            existing_id = candidate.get('lead_id') or f"u{len(records_by_id)+1:06d}"
+            records_by_id[existing_id] = candidate
+        else:
+            records_by_id[existing_id] = merge_record(records_by_id[existing_id], candidate)
+
+        # Register all identifiers after merge.
+        merged = records_by_id[existing_id]
+        for ident in identity_candidates(merged):
+            id_by_identity[ident] = existing_id
+
+    # Source 1: core signal records.
+    for rec in core_signals.get('records', []):
+        key = '|'.join([
+            (rec.get('name') or '').strip().lower(),
+            (rec.get('company') or '').strip().lower(),
+            (rec.get('title') or '').strip().lower(),
+        ])
+        contact = core_contact.get(key, {})
+        ingest({
+            'source': 'core_signal',
+            'lead_id': rec.get('lead_id') or '',
+            'name': rec.get('name') or '',
+            'company': rec.get('company') or '',
+            'title': rec.get('title') or '',
+            'region': rec.get('region') or '',
+            'email': normalize_email((rec.get('email') or '') or contact.get('email', '')),
+            'linkedin_url': normalize_url(contact.get('linkedin_url', '')),
+            'signal_score': len((rec.get('signals') or {}).get('matched_keywords') or []),
+            'metadata': {'signals': rec.get('signals') or {}},
+            'provenance_sources': ['core_signal'],
+        })
+
+    # Source 2: GitHub community profiles.
+    for rec in a7.get('all_prospects', []):
+        login = (rec.get('login') or '').strip().lower()
+        ingest({
+            'source': 'github_community',
+            'lead_id': f"github:{login}",
+            'name': rec.get('name') or rec.get('login') or '',
+            'company': rec.get('company') or '',
+            'title': 'Open-source community profile',
+            'region': rec.get('location') or '',
+            'email': '',
+            'linkedin_url': '',
+            'signal_score': int(rec.get('score') or 0),
+            'metadata': {
+                'tier': rec.get('tier') or '',
+                'profile_url': rec.get('profile_url') or '',
+                'score_reasons': rec.get('score_reasons') or [],
+            },
+            'provenance_sources': ['github_community'],
+        })
+
+    # Source 3: Reddit intent posts.
+    for rec in a9.get('all_ranked_posts', []):
+        author = (rec.get('author') or '').strip()
+        if not author:
+            continue
+        ingest({
+            'source': 'reddit_intent',
+            'lead_id': f"reddit:{author.lower()}",
+            'name': author,
+            'company': '',
+            'title': f"r/{rec.get('subreddit', '')} participant",
+            'region': '',
+            'email': '',
+            'linkedin_url': '',
+            'signal_score': int(rec.get('signal_score') or 0),
+            'metadata': {
+                'thread_url': rec.get('url') or '',
+                'ups': rec.get('ups') or 0,
+                'comments': rec.get('comments') or 0,
+            },
+            'provenance_sources': ['reddit_intent'],
+        })
+
+    rows = sorted(
+        records_by_id.values(),
+        key=lambda r: (
+            (r.get('name') or '').lower(),
+            (r.get('company') or '').lower(),
+            -int(r.get('signal_score') or 0),
+            (r.get('lead_id') or ''),
+        ),
+    )
+
+    return {
+        'artifact': 'unified_lead_queue',
+        'timestamp': now_iso(),
+        'total_unique_leads': len(rows),
+        'by_source': dict(Counter(r.get('source', '') for r in rows)),
+        'records': rows,
+    }
+
+
+def qualify_and_verify_contacts(unified: Dict, core_scores: Dict) -> Dict:
+    """Data QA gate: qualification + contactability + route decision."""
+    accepted_core = {rec.get('lead_id') for rec in core_scores.get('accepted', [])}
+    out = []
+
+    for rec in unified.get('records', []):
+        src = rec.get('source')
+        lead_id = rec.get('lead_id')
+        signal_score = int(rec.get('signal_score') or 0)
+        tier = (rec.get('metadata') or {}).get('tier', '')
+
+        qualified = False
+        qualification_reason = ''
+        if src == 'core_signal' and lead_id in accepted_core:
+            qualified = True
+            qualification_reason = 'Core scorer accepted (>=45)'
+        elif src == 'github_community' and tier in {'TIER_1', 'TIER_2'}:
+            qualified = True
+            qualification_reason = f'GitHub tier {tier}'
+        elif src == 'reddit_intent' and signal_score >= 4:
+            qualified = True
+            qualification_reason = f'Reddit intent score {signal_score}>=4'
+
+        email = normalize_email(rec.get('email') or '')
+        email_verified = bool(email)
+        linkedin_url = normalize_url(rec.get('linkedin_url') or '')
+        if email_verified:
+            contact_status = 'email_verified'
+            outreach_route = 'email_outreach_queue' if qualified else 'research_backlog'
+        elif linkedin_url:
+            contact_status = 'linkedin_only'
+            outreach_route = 'linkedin_outreach_queue' if qualified else 'research_backlog'
+        else:
+            contact_status = 'unreachable'
+            outreach_route = 'research_backlog'
+
+        out.append({
+            **rec,
+            'email': email,
+            'linkedin_url': linkedin_url,
+            'qualified': qualified,
+            'qualification_reason': qualification_reason,
+            'email_verified': email_verified,
+            'contact_status': contact_status,
+            'outreach_route': outreach_route,
+        })
+
+    return {
+        'artifact': 'contact_verification_gate',
+        'timestamp': now_iso(),
+        'input_count': len(out),
+        'qualified_count': sum(1 for r in out if r['qualified']),
+        'email_verified_count': sum(1 for r in out if r['email_verified']),
+        'linkedin_only_count': sum(1 for r in out if r['contact_status'] == 'linkedin_only'),
+        'unreachable_count': sum(1 for r in out if r['contact_status'] == 'unreachable'),
+        'email_outreach_queue_count': sum(1 for r in out if r['outreach_route'] == 'email_outreach_queue'),
+        'linkedin_outreach_queue_count': sum(1 for r in out if r['outreach_route'] == 'linkedin_outreach_queue'),
+        'research_backlog_count': sum(1 for r in out if r['outreach_route'] == 'research_backlog'),
+        'records': out,
     }
 
 
@@ -540,6 +831,7 @@ def main() -> None:
 
     env = load_env(ENV_PATH)
     core_run = run_core_agents()
+    core_signals = read_json(CORE_DIR / '02_signal_miner.json')
     core_scores = read_json(CORE_DIR / '03_lead_scoring.json')
     core_manager = read_json(CORE_DIR / '06_manager_summary.json')
     core_source_csv = resolve_repo_path(core_manager.get('source_csv', ''), REPO_ROOT)
@@ -548,6 +840,14 @@ def main() -> None:
     a8 = agent8_benchmark_watchdog()
     a9 = agent9_reddit_intent_radar()
     a10 = agent10_hn_trend_radar()
+
+    # If external APIs fail transiently, keep the latest successful artifacts.
+    a7 = recover_previous_artifact(OUT_DIR / '07_oss_community_pipeline.json', a7)
+    # Secondary fallback: interview-bundle snapshot keeps last known good OSS run.
+    a7 = recover_previous_artifact(REPO_ROOT / 'output' / 'interview-bundle' / 'artifacts' / 'extended_07_oss_community_pipeline.json', a7)
+    a8 = recover_previous_artifact(OUT_DIR / '08_benchmark_watchdog.json', a8)
+    a9 = recover_previous_artifact(OUT_DIR / '09_reddit_intent_radar.json', a9)
+    a10 = recover_previous_artifact(OUT_DIR / '10_hn_trend_radar.json', a10)
     a11 = agent11_icp_enrichment_resolver(core_scores, core_source_csv)
     a12 = agent12_competitive_intel_synthesizer(a8, a10)
 
@@ -559,6 +859,10 @@ def main() -> None:
         'agent10_hn_trend_radar': OUT_DIR / '10_hn_trend_radar.json',
         'agent11_icp_enrichment_resolver': OUT_DIR / '11_icp_enrichment_resolver.json',
         'agent12_competitive_intel_synthesizer': OUT_DIR / '12_competitive_intel_synthesizer.json',
+        'unified_lead_queue': OUT_DIR / '13_unified_lead_queue.json',
+        'contact_verification_gate': OUT_DIR / '14_contact_verification_gate.json',
+        'unified_lead_queue_csv': OUT_DIR / '13_unified_lead_queue.csv',
+        'contact_verification_gate_csv': OUT_DIR / '14_contact_verification_gate.csv',
         'dependency_graph': OUT_DIR / 'dependencies.json',
         'dependency_graph_html': OUT_DIR / 'mirothinker-12-agent-graph.html',
         'run_summary': OUT_DIR / 'run_summary.json',
@@ -572,6 +876,12 @@ def main() -> None:
     write_json(artifact_paths['agent10_hn_trend_radar'], a10)
     write_json(artifact_paths['agent11_icp_enrichment_resolver'], a11)
     write_json(artifact_paths['agent12_competitive_intel_synthesizer'], a12)
+    unified_queue = build_unified_lead_queue(core_signals, a7, a9, core_source_csv)
+    verification_gate = qualify_and_verify_contacts(unified_queue, core_scores)
+    write_json(artifact_paths['unified_lead_queue'], unified_queue)
+    write_json(artifact_paths['contact_verification_gate'], verification_gate)
+    write_csv(artifact_paths['unified_lead_queue_csv'], unified_queue.get('records', []))
+    write_csv(artifact_paths['contact_verification_gate_csv'], verification_gate.get('records', []))
 
     graph = build_dependency_graph()
     write_json(artifact_paths['dependency_graph'], graph)
@@ -594,11 +904,17 @@ def main() -> None:
             'core_accepted_leads': core_manager.get('accepted_count'),
             'core_drafts': core_manager.get('draft_count'),
             'a7_top_prospects': len(a7.get('top_prospects', [])) if isinstance(a7, dict) else 0,
+            'a7_all_prospects': len(a7.get('all_prospects', [])) if isinstance(a7, dict) else 0,
             'a8_threat_count': a8.get('threat_count', 0),
             'a9_high_intent_posts': len(a9.get('high_intent_posts', [])) if isinstance(a9, dict) else 0,
             'a10_threads': a10.get('total_threads', 0),
             'a11_enriched_count': a11.get('enriched_count', 0),
             'a12_high_threats': len(a12.get('high_threats', [])) if isinstance(a12, dict) else 0,
+            'unified_total_unique_leads': unified_queue.get('total_unique_leads', 0),
+            'qualified_total_leads': verification_gate.get('qualified_count', 0),
+            'email_verified_total_leads': verification_gate.get('email_verified_count', 0),
+            'linkedin_only_total_leads': verification_gate.get('linkedin_only_count', 0),
+            'unreachable_total_leads': verification_gate.get('unreachable_count', 0),
         },
         'artifacts': artifacts,
     }

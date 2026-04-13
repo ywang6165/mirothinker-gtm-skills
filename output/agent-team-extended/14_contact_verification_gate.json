@@ -1,0 +1,2211 @@
+{
+  "artifact": "contact_verification_gate",
+  "timestamp": "2026-04-13T22:16:42Z",
+  "input_count": 81,
+  "qualified_count": 32,
+  "email_verified_count": 0,
+  "linkedin_only_count": 25,
+  "unreachable_count": 56,
+  "email_outreach_queue_count": 0,
+  "linkedin_outreach_queue_count": 17,
+  "research_backlog_count": 64,
+  "records": [
+    {
+      "source": "github_community",
+      "lead_id": "github:anonno2",
+      "name": "anon.W",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/anonNo2",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "e2666cb56549",
+      "name": "Antonios Tsourdos",
+      "company": "Cranfield University",
+      "title": "Director of AI, Robotics and Space Theme",
+      "region": "Cranfield, England, United Kingdom",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/antonios-tsourdos-43169217",
+      "signal_score": 2,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "model checking",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:afogel",
+      "name": "Ariel",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/afogel",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:beizhangnina",
+      "name": "Bei Zhang",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/beizhangnina",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:xubbbb",
+      "name": "Bin Xu",
+      "company": "Shanghai Jiao Tong University",
+      "title": "Open-source community profile",
+      "region": "Shanghai",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 3,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/Xubbbb",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:luomaohao",
+      "name": "codeLzq",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/luomaohao",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:devoallen",
+      "name": "DevoAllen",
+      "company": "Harbin Institute of Technology(Shenzhen)",
+      "title": "Open-source community profile",
+      "region": "Shenzhen, Guangdong, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/DevoAllen",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "913f32957501",
+      "name": "Dimple R.",
+      "company": "Fitch Solutions",
+      "title": "Director, Team Lead for UK & Western Europe Sales- Ratings, Research & Financial Data",
+      "region": "United Kingdom",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/dimple-raithatha",
+      "signal_score": 2,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:xsser",
+      "name": "EchoLogic",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "new york",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/xsser",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:feelthefonk",
+      "name": "Fonk",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/FeelTheFonk",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:mynoveldownloads",
+      "name": "gg",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/mynoveldownloads",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "240a04293981",
+      "name": "Girish Sharma",
+      "company": "Mercury Insurance",
+      "title": "Head of Data and AI engineering",
+      "region": "San Jose, California, United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/girishbsharma",
+      "signal_score": 2,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "compliance",
+            "risk"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:islinxu",
+      "name": "Hertz",
+      "company": "AI Builder",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 6,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/isLinXu",
+        "score_reasons": [
+          "company listed (non-student)",
+          "influence signal (followers/repos)",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:i4never",
+      "name": "i4never",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/i4never",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "91ce918018a7",
+      "name": "Ian Derbyshire",
+      "company": "Baker Hughes",
+      "title": "Director of Research & Technology",
+      "region": "Derby, England, United Kingdom",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/ian-derbyshire-03779b328",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "c0f8aea06a01",
+      "name": "Ihab Hamadi",
+      "company": "Western Digital",
+      "title": "Head of AI Infrastructure and Strategy, Platforms",
+      "region": "San Francisco Bay Area",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/ihamadi",
+      "signal_score": 0,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [],
+          "role_signal": "decision-maker",
+          "region_signal": "other",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:turboslon",
+      "name": "Ilya Chidyakin",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/turboslon",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:liuzhan22",
+      "name": "Jason Liu",
+      "company": "Tsinghua University",
+      "title": "Open-source community profile",
+      "region": "Beijing, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/liuzhan22",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:jenny-agent",
+      "name": "Jenny",
+      "company": "Phd Student",
+      "title": "Open-source community profile",
+      "region": "Beijing, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/jenny-agent",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "39494d7ec9be",
+      "name": "Jesse Wolfe",
+      "company": "Upgrade, Inc.",
+      "title": "Head of AI Organization Design | FinTech",
+      "region": "Colorado Springs, Colorado, United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/jessewolfe13",
+      "signal_score": 0,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:liujiaheng",
+      "name": "Jiaheng Liu",
+      "company": "Nanjing University",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 6,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/liujiaheng",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)",
+          "domain keyword in bio",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:callanwu",
+      "name": "Jialong Wu",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 5,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/callanwu",
+        "score_reasons": [
+          "influence signal (followers/repos)",
+          "domain keyword in bio",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:swordlidev",
+      "name": "Jian",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "Shang Hai",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 5,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/swordlidev",
+        "score_reasons": [
+          "influence signal (followers/repos)",
+          "domain keyword in bio",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:aquilajw",
+      "name": "Jian Wang",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/Aquilajw",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:kibitzing",
+      "name": "Jingu Kang",
+      "company": "NAVER Cloud",
+      "title": "Open-source community profile",
+      "region": "Korea",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 7,
+      "metadata": {
+        "tier": "TIER_1",
+        "profile_url": "https://github.com/kibitzing",
+        "score_reasons": [
+          "company listed (non-student)",
+          "influence signal (followers/repos)",
+          "domain keyword in bio"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_1",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "173839808caa",
+      "name": "Karen O'Dea",
+      "company": "Capgemini Engineering",
+      "title": "Senior Director, Engineering, Research and Development Services",
+      "region": "United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/karen-o-dea-22049b",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "6f5dce2d371d",
+      "name": "Keshav Ramani",
+      "company": "JPMorganChase",
+      "title": "Executive Director | AI Research Director",
+      "region": "United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/keshav-ramani-785a8328",
+      "signal_score": 3,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "model checking",
+            "research",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:gali-leilei",
+      "name": "lei-lei",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/gali-leilei",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:letian-wang",
+      "name": "Letian Wang",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/Letian-Wang",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:ottolu",
+      "name": "Lewei Lu",
+      "company": "Microsoft Research Asia",
+      "title": "Open-source community profile",
+      "region": "Beijing, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 7,
+      "metadata": {
+        "tier": "TIER_1",
+        "profile_url": "https://github.com/ottolu",
+        "score_reasons": [
+          "company listed (non-student)",
+          "tier-1 company signal",
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_1",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:jianghuyihei",
+      "name": "long li",
+      "company": "\u6d59\u6c5f\u5927\u5b66",
+      "title": "Open-source community profile",
+      "region": "HangZhou",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 7,
+      "metadata": {
+        "tier": "TIER_1",
+        "profile_url": "https://github.com/jianghuyihei",
+        "score_reasons": [
+          "company listed (non-student)",
+          "influence signal (followers/repos)",
+          "domain keyword in bio"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_1",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "a563424f7ee0",
+      "name": "Lucas Cordeiro",
+      "company": "The University of Manchester",
+      "title": "Associate Professor in Computing System Architecture",
+      "region": "Wilmslow, England, United Kingdom",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/lucas-cordeiro-3156233",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "practitioner",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "7a1e46ac4229",
+      "name": "Luke Ong",
+      "company": "Nanyang Technological University Singapore",
+      "title": "Emeritus Fellow",
+      "region": "Singapore, Singapore",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/luke-ong-5a95a124",
+      "signal_score": 0,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [],
+          "role_signal": "practitioner",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "c9751cfa9436",
+      "name": "Marc Lyonnais",
+      "company": "Ciena",
+      "title": "Director, External Research",
+      "region": "Canada",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/marc-lyonnais-1311a911",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:aaron617",
+      "name": "Mengkang Hu",
+      "company": "evolvent.co",
+      "title": "Open-source community profile",
+      "region": "Hong Kong, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 4,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/Aaron617",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:mercymo",
+      "name": "MercyMo",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/MercyMo",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "a2dccc6a5b67",
+      "name": "Miguel F Jimenez Sola",
+      "company": "Yoti",
+      "title": "Head of AI Services",
+      "region": "London, England, United Kingdom",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/miguelfjimenez",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "922f3d96c4fa",
+      "name": "Murtaza Cherawala",
+      "company": "Alexion Pharmaceuticals, Inc.",
+      "title": "Head of AI",
+      "region": "Cambridge, Massachusetts, United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/murtaza-cherawala",
+      "signal_score": 4,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "compliance",
+            "governance",
+            "risk",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:muz1lee",
+      "name": "muz1lee",
+      "company": "National University of Singapore",
+      "title": "Open-source community profile",
+      "region": "Singapore",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/muz1lee",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "b5a579f7093c",
+      "name": "Nigel Guy",
+      "company": "Sumitomo Mitsui Banking Corporation",
+      "title": "Technical and Commercial Director (Advisory)",
+      "region": "London, England, United Kingdom",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/nigel-guy",
+      "signal_score": 2,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "governance",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "f922d1400674",
+      "name": "Nikolaos Louloudakis, Ph.D.",
+      "company": "Barclays",
+      "title": "Co-Founder",
+      "region": "Edinburgh, Scotland, United Kingdom",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/luludak",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "practitioner",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:oooskarrr",
+      "name": "oooskarrr",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/oooskarrr",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:whu-yh-jx",
+      "name": "Ordinary World",
+      "company": "CASIA & WHU",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 3,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/WHU-YH-jx",
+        "score_reasons": [
+          "company listed (non-student)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:pandazki",
+      "name": "Pandazki",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/pandazki",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:pengyizhou",
+      "name": "pengyizhou",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/pengyizhou",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "66cbf184f8ab",
+      "name": "Pritish Nawlakhe",
+      "company": "Kind Lending | NMLS #3925",
+      "title": "AI Evangelist",
+      "region": "Washington DC-Baltimore Area",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/pritishnawlakhe",
+      "signal_score": 3,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "compliance",
+            "governance",
+            "risk"
+          ],
+          "role_signal": "practitioner",
+          "region_signal": "other",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "9d47a1aaa819",
+      "name": "Ramana Kompella",
+      "company": "Cisco",
+      "title": "Cisco Fellow and Head of Cisco Research",
+      "region": "San Francisco Bay Area",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/rkompella",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "other",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "2d6c40dc6399",
+      "name": "Richard Pellegrino",
+      "company": "Virginia Commonwealth University",
+      "title": "Senior Director, Research & Development",
+      "region": "Washington DC-Baltimore Area",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/richardpellegrino",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "other",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "8326991a96ab",
+      "name": "Ryan Connolly",
+      "company": "Calyxo, Inc.",
+      "title": "Senior Vice President of Research and Development",
+      "region": "San Carlos, California, United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/ryanconnolly",
+      "signal_score": 2,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research",
+            "verification"
+          ],
+          "role_signal": "practitioner",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:ryan-yuan-canva",
+      "name": "ryan-yuan",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/ryan-yuan-canva",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "7b9efd008e71",
+      "name": "Samir Ouchani",
+      "company": "CESI",
+      "title": "Research Director",
+      "region": "Montreal, Quebec, Canada",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/samir-ouchani-9b012515",
+      "signal_score": 2,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:zhanghaonan777",
+      "name": "Saul Goodman",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/zhanghaonan777",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "58b8f1634db8",
+      "name": "Sharan Narang",
+      "company": "Meta",
+      "title": "Director, AI Research",
+      "region": "San Francisco, California, United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/sharan-narang",
+      "signal_score": 1,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:shawnlimn",
+      "name": "Shawn",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/shawnlimn",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:stone28615",
+      "name": "Shen Yecheng",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/stone28615",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:lengsicong",
+      "name": "Sicong",
+      "company": "Nanyang Technological University",
+      "title": "Open-source community profile",
+      "region": "Singapore",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 3,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/LengSicong",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "4e758c92a02c",
+      "name": "Steve Breen",
+      "company": "R\u00f6chling Medical",
+      "title": "Global Director of Research and Development",
+      "region": "Blandon, Pennsylvania, United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/stevenbreen",
+      "signal_score": 4,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "compliance",
+            "research",
+            "risk",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:steven-luo",
+      "name": "Steven-Luo",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/Steven-Luo",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:suhmily10",
+      "name": "suhmily10",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/suhmily10",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "be3702908020",
+      "name": "Suniya Mohsin",
+      "company": "InvoZone",
+      "title": "Entertainment XR Solutions-Director",
+      "region": "Toronto, Ontario, Canada",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/suniya-invogames",
+      "signal_score": 2,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "research",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:prophet768189",
+      "name": "Tianyu Jiao",
+      "company": "TsingHua University",
+      "title": "Open-source community profile",
+      "region": "Beijing,CHN",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/Prophet768189",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:vectorscience",
+      "name": "VectorScience",
+      "company": "Tsinghua University",
+      "title": "Open-source community profile",
+      "region": "Haidian  District, Beijing, 100084, P. R. China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/VectorScience",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "db8095ff1fb7",
+      "name": "Vladislav Nodelman, PhD",
+      "company": "BeOne Medicines",
+      "title": "Owner / Principal",
+      "region": "San Diego, California, United States",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/vladislav-nodelman",
+      "signal_score": 0,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:victorwz",
+      "name": "Weizhi Wang",
+      "company": "Tencent",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 10,
+      "metadata": {
+        "tier": "TIER_1",
+        "profile_url": "https://github.com/Victorwz",
+        "score_reasons": [
+          "company listed (non-student)",
+          "tier-1 company signal",
+          "influence signal (followers/repos)",
+          "domain keyword in bio",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_1",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:xszheng2020",
+      "name": "Xiaosen Zheng",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 4,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/xszheng2020",
+        "score_reasons": [
+          "influence signal (followers/repos)",
+          "domain keyword in bio"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:xuan-dong-shanda",
+      "name": "xuan-dong-shanda",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/xuan-dong-shanda",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:duyichao",
+      "name": "Yichao",
+      "company": "USTC",
+      "title": "Open-source community profile",
+      "region": "Hefei, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 3,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/duyichao",
+        "score_reasons": [
+          "company listed (non-student)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:zhaoyd1",
+      "name": "Yida Zhao",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "Shanghai",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/zhaoyd1",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:yifanpu001",
+      "name": "Yifan Pu",
+      "company": "Tsinghua University",
+      "title": "Open-source community profile",
+      "region": "Beijing",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 4,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/yifanpu001",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:yixinhuang48",
+      "name": "Yixin Huang",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "San Diego",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/yixinhuang48",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:liqq1",
+      "name": "YOLO",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "Shanghai, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/Liqq1",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:tc-yue",
+      "name": "yue",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 0,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/tc-yue",
+        "score_reasons": []
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:yuecao0119",
+      "name": "Yue Cao",
+      "company": "Nanjing University",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/yuecao0119",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:yconquesty",
+      "name": "Yue Yu",
+      "company": "@taco-project",
+      "title": "Open-source community profile",
+      "region": "Lausanne, Switzerland",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 5,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/YconquestY",
+        "score_reasons": [
+          "company listed (non-student)",
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:ralph-zhou",
+      "name": "Yuhang Zhou",
+      "company": "Fudan University",
+      "title": "Open-source community profile",
+      "region": "Shanghai, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 1,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/Ralph-Zhou",
+        "score_reasons": [
+          "company listed (student-like)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:wzk1015",
+      "name": "Zhaokai Wang",
+      "company": "Shanghai Jiao Tong University",
+      "title": "Open-source community profile",
+      "region": "Shanghai",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 4,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/wzk1015",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:yuanshi9815",
+      "name": "Zhenxiong Tan",
+      "company": "National University of Singapore",
+      "title": "Open-source community profile",
+      "region": "Singapore",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 4,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/Yuanshi9815",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)",
+          "100+ followers"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "core_signal",
+      "lead_id": "cb2ee79be912",
+      "name": "Zhitao Fan (Ph.D)",
+      "company": "GoTo Group",
+      "title": "Head of Data, KYC, Computer Vision, Voice and AI",
+      "region": "Singapore",
+      "email": "",
+      "linkedin_url": "https://www.linkedin.com/in/fanzhitao",
+      "signal_score": 5,
+      "metadata": {
+        "signals": {
+          "matched_keywords": [
+            "compliance",
+            "governance",
+            "model checking",
+            "risk",
+            "verification"
+          ],
+          "role_signal": "decision-maker",
+          "region_signal": "preferred",
+          "has_profile": true
+        }
+      },
+      "provenance_sources": [
+        "core_signal"
+      ],
+      "qualified": true,
+      "qualification_reason": "Core scorer accepted (>=45)",
+      "email_verified": false,
+      "contact_status": "linkedin_only",
+      "outreach_route": "linkedin_outreach_queue"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:rookiexiong7",
+      "name": "Zhixiong Zhang (SII)",
+      "company": "Shanghai Jiao Tong University & Shanghai Innovation Institute",
+      "title": "Open-source community profile",
+      "region": "Shanghai, China",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 5,
+      "metadata": {
+        "tier": "TIER_2",
+        "profile_url": "https://github.com/rookiexiong7",
+        "score_reasons": [
+          "company listed (student-like)",
+          "influence signal (followers/repos)",
+          "domain keyword in bio"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": true,
+      "qualification_reason": "GitHub tier TIER_2",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:liu-zhy",
+      "name": "zyLiu",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/liu-zhy",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    },
+    {
+      "source": "github_community",
+      "lead_id": "github:zzdhybthu",
+      "name": "zzdhyb",
+      "company": "",
+      "title": "Open-source community profile",
+      "region": "",
+      "email": "",
+      "linkedin_url": "",
+      "signal_score": 2,
+      "metadata": {
+        "tier": "TIER_3",
+        "profile_url": "https://github.com/zzdhybthu",
+        "score_reasons": [
+          "influence signal (followers/repos)"
+        ]
+      },
+      "provenance_sources": [
+        "github_community"
+      ],
+      "qualified": false,
+      "qualification_reason": "",
+      "email_verified": false,
+      "contact_status": "unreachable",
+      "outreach_route": "research_backlog"
+    }
+  ]
+}

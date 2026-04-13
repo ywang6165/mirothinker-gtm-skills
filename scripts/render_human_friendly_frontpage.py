@@ -192,12 +192,28 @@ pre{{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px;
       <a href='artifacts/mirothinker-step-by-step-execution.html' target='_blank'>Execution Trace</a>
       <a href='artifacts/mirothinker-12-agent-graph.html' target='_blank'>Dependency Graph</a>
       <a href='artifacts/extended_run_summary.json' target='_blank'>Run Summary JSON</a>
+      <a href='artifacts/extended_13_unified_lead_queue.json' target='_blank'>Unified Lead Queue JSON</a>
+      <a href='artifacts/extended_14_contact_verification_gate.json' target='_blank'>Contact Verification JSON</a>
+      <a href='artifacts/extended_13_unified_lead_queue.csv' target='_blank'>Unified Lead Queue CSV</a>
+      <a href='artifacts/extended_14_contact_verification_gate.csv' target='_blank'>Contact Verification CSV</a>
     </div>
   </div>
 
   <div class='panel'>
     <h2>How They Work Together on the Front Page</h2>
     <p>The system has two layers: <strong>core execution agents</strong> (A1-A6) that qualify and create outreach assets, and <strong>expansion agents</strong> (A7-A12) that add community demand signals, benchmark intelligence, and enrichment context. Outputs converge into A4 (writer), then A5 (QA), then A6 (orchestrator validation/reporting).</p>
+  </div>
+
+  <div class='panel'>
+    <h2>Data QA Gate (New)</h2>
+    <p>We now merge leads early into one canonical queue, then run contactability classification before outreach routing.</p>
+    <ul>
+      <li><strong>Unified total leads:</strong> {esc(ext_sum.get('key_counts', {}).get('unified_total_unique_leads', 'n/a'))}</li>
+      <li><strong>Qualified leads:</strong> {esc(ext_sum.get('key_counts', {}).get('qualified_total_leads', 'n/a'))}</li>
+      <li><strong>Email verified:</strong> {esc(ext_sum.get('key_counts', {}).get('email_verified_total_leads', 'n/a'))}</li>
+      <li><strong>LinkedIn-only fallback:</strong> {esc(ext_sum.get('key_counts', {}).get('linkedin_only_total_leads', 'n/a'))}</li>
+      <li><strong>Unreachable backlog:</strong> {esc(ext_sum.get('key_counts', {}).get('unreachable_total_leads', 'n/a'))}</li>
+    </ul>
   </div>
 
   <div class='panel'>

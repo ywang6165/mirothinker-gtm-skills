@@ -206,6 +206,10 @@ def generate_index(manager, db_snapshot):
         'artifacts/extended_10_hn_trend_radar.json',
         'artifacts/extended_11_icp_enrichment_resolver.json',
         'artifacts/extended_12_competitive_intel_synthesizer.json',
+        'artifacts/extended_13_unified_lead_queue.json',
+        'artifacts/extended_14_contact_verification_gate.json',
+        'artifacts/extended_13_unified_lead_queue.csv',
+        'artifacts/extended_14_contact_verification_gate.csv',
     ]
     links_html = ''.join(f"<li><a href='{html_escape(p)}' target='_blank'>{html_escape(p)}</a></li>" for p in links)
 
@@ -338,6 +342,10 @@ def main():
         '10_hn_trend_radar.json': 'extended_10_hn_trend_radar.json',
         '11_icp_enrichment_resolver.json': 'extended_11_icp_enrichment_resolver.json',
         '12_competitive_intel_synthesizer.json': 'extended_12_competitive_intel_synthesizer.json',
+        '13_unified_lead_queue.json': 'extended_13_unified_lead_queue.json',
+        '14_contact_verification_gate.json': 'extended_14_contact_verification_gate.json',
+        '13_unified_lead_queue.csv': 'extended_13_unified_lead_queue.csv',
+        '14_contact_verification_gate.csv': 'extended_14_contact_verification_gate.csv',
     }
     for src_name, dst_name in extended_map.items():
         src = EXT_DIR / src_name

@@ -1,6 +1,1195 @@
 {
   "agent": "OSS Community Pipeline",
-  "timestamp": "2026-04-13T02:40:10Z",
-  "status": "error",
-  "error": "GitHub stargazer fetch failed: HTTP Error 403: rate limit exceeded"
+  "timestamp": "2026-04-13T22:15:27Z",
+  "status": "fallback",
+  "source": "GitHub stargazers for MiroMindAI/MiroThinker",
+  "fetched_stargazers": 60,
+  "enriched_profiles": 56,
+  "tiers": {
+    "TIER_1": 4,
+    "TIER_2": 11,
+    "TIER_3": 41
+  },
+  "top_prospects": [
+    {
+      "login": "Victorwz",
+      "name": "Weizhi Wang",
+      "company": "Tencent",
+      "bio": "Researcher @Tencent-Hunyuan ",
+      "location": "",
+      "followers": 121,
+      "public_repos": 25,
+      "score": 10,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "tier-1 company signal",
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/Victorwz"
+    },
+    {
+      "login": "ottolu",
+      "name": "Lewei Lu",
+      "company": "Microsoft Research Asia",
+      "bio": "",
+      "location": "Beijing, China",
+      "followers": 83,
+      "public_repos": 120,
+      "score": 7,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "tier-1 company signal",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/ottolu"
+    },
+    {
+      "login": "jianghuyihei",
+      "name": "long li",
+      "company": "\u6d59\u6c5f\u5927\u5b66",
+      "bio": "ZJU Master;\r\nMajor:(Diffusion Model,Computer Graphic,Agent)",
+      "location": "HangZhou",
+      "followers": 60,
+      "public_repos": 14,
+      "score": 7,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/jianghuyihei"
+    },
+    {
+      "login": "kibitzing",
+      "name": "Jingu Kang",
+      "company": "NAVER Cloud",
+      "bio": "LLM (HyperCLOVA X) Post training at NAVER Cloud",
+      "location": "Korea",
+      "followers": 31,
+      "public_repos": 27,
+      "score": 7,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/kibitzing"
+    },
+    {
+      "login": "isLinXu",
+      "name": "Hertz",
+      "company": "AI Builder",
+      "bio": "world is large model.",
+      "location": "",
+      "followers": 290,
+      "public_repos": 355,
+      "score": 6,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/isLinXu"
+    },
+    {
+      "login": "liujiaheng",
+      "name": "Jiaheng Liu",
+      "company": "Nanjing University",
+      "bio": "LLM Researcher.\r\nAP@NJU.",
+      "location": "",
+      "followers": 121,
+      "public_repos": 9,
+      "score": 6,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/liujiaheng"
+    },
+    {
+      "login": "callanwu",
+      "name": "Jialong Wu",
+      "company": "",
+      "bio": "grow agents",
+      "location": "",
+      "followers": 354,
+      "public_repos": 63,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/callanwu"
+    },
+    {
+      "login": "swordlidev",
+      "name": "Jian",
+      "company": "",
+      "bio": "Research in YouTu Tencent.\r\nswordli@tencent.com",
+      "location": "Shang Hai",
+      "followers": 157,
+      "public_repos": 117,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/swordlidev"
+    },
+    {
+      "login": "rookiexiong7",
+      "name": "Zhixiong Zhang (SII)",
+      "company": "Shanghai Jiao Tong University & Shanghai Innovation Institute",
+      "bio": "Ph.D. student @ SJTU & SII. Prev. B.Eng. @ HIT. SII is an institution dedicated to innovation in education and research in the field of AI.",
+      "location": "Shanghai, China",
+      "followers": 51,
+      "public_repos": 9,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/rookiexiong7"
+    },
+    {
+      "login": "YconquestY",
+      "name": "Yue Yu",
+      "company": "@taco-project",
+      "bio": "",
+      "location": "Lausanne, Switzerland",
+      "followers": 36,
+      "public_repos": 28,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/YconquestY"
+    },
+    {
+      "login": "wzk1015",
+      "name": "Zhaokai Wang",
+      "company": "Shanghai Jiao Tong University",
+      "bio": "PhD candidate @ SJTU & Shanghai AI Lab",
+      "location": "Shanghai",
+      "followers": 139,
+      "public_repos": 41,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/wzk1015"
+    },
+    {
+      "login": "Aaron617",
+      "name": "Mengkang Hu",
+      "company": "evolvent.co",
+      "bio": "Ph.D. Student of the University of Hong Kong (HKU MMLAB)",
+      "location": "Hong Kong, China",
+      "followers": 130,
+      "public_repos": 26,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/Aaron617"
+    },
+    {
+      "login": "Yuanshi9815",
+      "name": "Zhenxiong Tan",
+      "company": "National University of Singapore",
+      "bio": "\"Do be do be do.\" \u2014 Sinatra\r\n",
+      "location": "Singapore",
+      "followers": 120,
+      "public_repos": 9,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/Yuanshi9815"
+    },
+    {
+      "login": "yifanpu001",
+      "name": "Yifan Pu",
+      "company": "Tsinghua University",
+      "bio": "{puyf23, pyf20} at mails.tsinghua.edu.cn",
+      "location": "Beijing",
+      "followers": 104,
+      "public_repos": 26,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/yifanpu001"
+    },
+    {
+      "login": "xszheng2020",
+      "name": "Xiaosen Zheng",
+      "company": "",
+      "bio": "Researcher @ TikTok",
+      "location": "",
+      "followers": 85,
+      "public_repos": 15,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/xszheng2020"
+    },
+    {
+      "login": "LengSicong",
+      "name": "Sicong",
+      "company": "Nanyang Technological University",
+      "bio": "PhD at NTU | Multi-modal Learning | Embodied AI",
+      "location": "Singapore",
+      "followers": 83,
+      "public_repos": 36,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/LengSicong"
+    },
+    {
+      "login": "Xubbbb",
+      "name": "Bin Xu",
+      "company": "Shanghai Jiao Tong University",
+      "bio": "First year PhD student at Institute of Parallel and Distributed Systems @SJTU-IPADS , Shanghai Jiao Tong University @SJTU-SE ",
+      "location": "Shanghai",
+      "followers": 70,
+      "public_repos": 26,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/Xubbbb"
+    },
+    {
+      "login": "duyichao",
+      "name": "Yichao",
+      "company": "USTC",
+      "bio": " NLP | Wubba Lubba Dub-Dub.  ",
+      "location": "Hefei, China",
+      "followers": 45,
+      "public_repos": 12,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (non-student)"
+      ],
+      "profile_url": "https://github.com/duyichao"
+    },
+    {
+      "login": "WHU-YH-jx",
+      "name": "Ordinary World",
+      "company": "CASIA & WHU",
+      "bio": "",
+      "location": "",
+      "followers": 8,
+      "public_repos": 10,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (non-student)"
+      ],
+      "profile_url": "https://github.com/WHU-YH-jx"
+    },
+    {
+      "login": "pandazki",
+      "name": "Pandazki",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 71,
+      "public_repos": 85,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/pandazki"
+    }
+  ],
+  "all_prospects": [
+    {
+      "login": "Victorwz",
+      "name": "Weizhi Wang",
+      "company": "Tencent",
+      "bio": "Researcher @Tencent-Hunyuan ",
+      "location": "",
+      "followers": 121,
+      "public_repos": 25,
+      "score": 10,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "tier-1 company signal",
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/Victorwz"
+    },
+    {
+      "login": "ottolu",
+      "name": "Lewei Lu",
+      "company": "Microsoft Research Asia",
+      "bio": "",
+      "location": "Beijing, China",
+      "followers": 83,
+      "public_repos": 120,
+      "score": 7,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "tier-1 company signal",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/ottolu"
+    },
+    {
+      "login": "jianghuyihei",
+      "name": "long li",
+      "company": "\u6d59\u6c5f\u5927\u5b66",
+      "bio": "ZJU Master;\r\nMajor:(Diffusion Model,Computer Graphic,Agent)",
+      "location": "HangZhou",
+      "followers": 60,
+      "public_repos": 14,
+      "score": 7,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/jianghuyihei"
+    },
+    {
+      "login": "kibitzing",
+      "name": "Jingu Kang",
+      "company": "NAVER Cloud",
+      "bio": "LLM (HyperCLOVA X) Post training at NAVER Cloud",
+      "location": "Korea",
+      "followers": 31,
+      "public_repos": 27,
+      "score": 7,
+      "tier": "TIER_1",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/kibitzing"
+    },
+    {
+      "login": "isLinXu",
+      "name": "Hertz",
+      "company": "AI Builder",
+      "bio": "world is large model.",
+      "location": "",
+      "followers": 290,
+      "public_repos": 355,
+      "score": 6,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/isLinXu"
+    },
+    {
+      "login": "liujiaheng",
+      "name": "Jiaheng Liu",
+      "company": "Nanjing University",
+      "bio": "LLM Researcher.\r\nAP@NJU.",
+      "location": "",
+      "followers": 121,
+      "public_repos": 9,
+      "score": 6,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/liujiaheng"
+    },
+    {
+      "login": "callanwu",
+      "name": "Jialong Wu",
+      "company": "",
+      "bio": "grow agents",
+      "location": "",
+      "followers": 354,
+      "public_repos": 63,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/callanwu"
+    },
+    {
+      "login": "swordlidev",
+      "name": "Jian",
+      "company": "",
+      "bio": "Research in YouTu Tencent.\r\nswordli@tencent.com",
+      "location": "Shang Hai",
+      "followers": 157,
+      "public_repos": 117,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "influence signal (followers/repos)",
+        "domain keyword in bio",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/swordlidev"
+    },
+    {
+      "login": "rookiexiong7",
+      "name": "Zhixiong Zhang (SII)",
+      "company": "Shanghai Jiao Tong University & Shanghai Innovation Institute",
+      "bio": "Ph.D. student @ SJTU & SII. Prev. B.Eng. @ HIT. SII is an institution dedicated to innovation in education and research in the field of AI.",
+      "location": "Shanghai, China",
+      "followers": 51,
+      "public_repos": 9,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/rookiexiong7"
+    },
+    {
+      "login": "YconquestY",
+      "name": "Yue Yu",
+      "company": "@taco-project",
+      "bio": "",
+      "location": "Lausanne, Switzerland",
+      "followers": 36,
+      "public_repos": 28,
+      "score": 5,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (non-student)",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/YconquestY"
+    },
+    {
+      "login": "wzk1015",
+      "name": "Zhaokai Wang",
+      "company": "Shanghai Jiao Tong University",
+      "bio": "PhD candidate @ SJTU & Shanghai AI Lab",
+      "location": "Shanghai",
+      "followers": 139,
+      "public_repos": 41,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/wzk1015"
+    },
+    {
+      "login": "Aaron617",
+      "name": "Mengkang Hu",
+      "company": "evolvent.co",
+      "bio": "Ph.D. Student of the University of Hong Kong (HKU MMLAB)",
+      "location": "Hong Kong, China",
+      "followers": 130,
+      "public_repos": 26,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/Aaron617"
+    },
+    {
+      "login": "Yuanshi9815",
+      "name": "Zhenxiong Tan",
+      "company": "National University of Singapore",
+      "bio": "\"Do be do be do.\" \u2014 Sinatra\r\n",
+      "location": "Singapore",
+      "followers": 120,
+      "public_repos": 9,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/Yuanshi9815"
+    },
+    {
+      "login": "yifanpu001",
+      "name": "Yifan Pu",
+      "company": "Tsinghua University",
+      "bio": "{puyf23, pyf20} at mails.tsinghua.edu.cn",
+      "location": "Beijing",
+      "followers": 104,
+      "public_repos": 26,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)",
+        "100+ followers"
+      ],
+      "profile_url": "https://github.com/yifanpu001"
+    },
+    {
+      "login": "xszheng2020",
+      "name": "Xiaosen Zheng",
+      "company": "",
+      "bio": "Researcher @ TikTok",
+      "location": "",
+      "followers": 85,
+      "public_repos": 15,
+      "score": 4,
+      "tier": "TIER_2",
+      "score_reasons": [
+        "influence signal (followers/repos)",
+        "domain keyword in bio"
+      ],
+      "profile_url": "https://github.com/xszheng2020"
+    },
+    {
+      "login": "LengSicong",
+      "name": "Sicong",
+      "company": "Nanyang Technological University",
+      "bio": "PhD at NTU | Multi-modal Learning | Embodied AI",
+      "location": "Singapore",
+      "followers": 83,
+      "public_repos": 36,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/LengSicong"
+    },
+    {
+      "login": "Xubbbb",
+      "name": "Bin Xu",
+      "company": "Shanghai Jiao Tong University",
+      "bio": "First year PhD student at Institute of Parallel and Distributed Systems @SJTU-IPADS , Shanghai Jiao Tong University @SJTU-SE ",
+      "location": "Shanghai",
+      "followers": 70,
+      "public_repos": 26,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)",
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/Xubbbb"
+    },
+    {
+      "login": "duyichao",
+      "name": "Yichao",
+      "company": "USTC",
+      "bio": " NLP | Wubba Lubba Dub-Dub.  ",
+      "location": "Hefei, China",
+      "followers": 45,
+      "public_repos": 12,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (non-student)"
+      ],
+      "profile_url": "https://github.com/duyichao"
+    },
+    {
+      "login": "WHU-YH-jx",
+      "name": "Ordinary World",
+      "company": "CASIA & WHU",
+      "bio": "",
+      "location": "",
+      "followers": 8,
+      "public_repos": 10,
+      "score": 3,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (non-student)"
+      ],
+      "profile_url": "https://github.com/WHU-YH-jx"
+    },
+    {
+      "login": "pandazki",
+      "name": "Pandazki",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 71,
+      "public_repos": 85,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/pandazki"
+    },
+    {
+      "login": "liu-zhy",
+      "name": "zyLiu",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 53,
+      "public_repos": 50,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/liu-zhy"
+    },
+    {
+      "login": "afogel",
+      "name": "Ariel",
+      "company": "",
+      "bio": "I like silly hats.",
+      "location": "",
+      "followers": 52,
+      "public_repos": 113,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/afogel"
+    },
+    {
+      "login": "Steven-Luo",
+      "name": "Steven-Luo",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 33,
+      "public_repos": 58,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/Steven-Luo"
+    },
+    {
+      "login": "shawnlimn",
+      "name": "Shawn",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 30,
+      "public_repos": 21,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/shawnlimn"
+    },
+    {
+      "login": "FeelTheFonk",
+      "name": "Fonk",
+      "company": "",
+      "bio": "54 68 65 20 4D 61 74 72 69 78 20 68\r\n61 73 20 79 6F 75 2E 2E 2E",
+      "location": "",
+      "followers": 19,
+      "public_repos": 48,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/FeelTheFonk"
+    },
+    {
+      "login": "luomaohao",
+      "name": "codeLzq",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 18,
+      "public_repos": 78,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/luomaohao"
+    },
+    {
+      "login": "i4never",
+      "name": "i4never",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 13,
+      "public_repos": 29,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/i4never"
+    },
+    {
+      "login": "pengyizhou",
+      "name": "pengyizhou",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 12,
+      "public_repos": 78,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/pengyizhou"
+    },
+    {
+      "login": "zzdhybthu",
+      "name": "zzdhyb",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 11,
+      "public_repos": 25,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/zzdhybthu"
+    },
+    {
+      "login": "ryan-yuan-canva",
+      "name": "ryan-yuan",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 3,
+      "public_repos": 34,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/ryan-yuan-canva"
+    },
+    {
+      "login": "beizhangnina",
+      "name": "Bei Zhang",
+      "company": "",
+      "bio": "Growth at Shanda",
+      "location": "",
+      "followers": 1,
+      "public_repos": 24,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/beizhangnina"
+    },
+    {
+      "login": "mynoveldownloads",
+      "name": "gg",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 0,
+      "public_repos": 26,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/mynoveldownloads"
+    },
+    {
+      "login": "xsser",
+      "name": "EchoLogic",
+      "company": "",
+      "bio": "Developer\r\n",
+      "location": "new york",
+      "followers": 0,
+      "public_repos": 53,
+      "score": 2,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "influence signal (followers/repos)"
+      ],
+      "profile_url": "https://github.com/xsser"
+    },
+    {
+      "login": "jenny-agent",
+      "name": "Jenny",
+      "company": "Phd Student",
+      "bio": "Phd student",
+      "location": "Beijing, China",
+      "followers": 43,
+      "public_repos": 3,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/jenny-agent"
+    },
+    {
+      "login": "Ralph-Zhou",
+      "name": "Yuhang Zhou",
+      "company": "Fudan University",
+      "bio": "First-year master's student at Fudan University",
+      "location": "Shanghai, China",
+      "followers": 40,
+      "public_repos": 7,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/Ralph-Zhou"
+    },
+    {
+      "login": "yuecao0119",
+      "name": "Yue Cao",
+      "company": "Nanjing University",
+      "bio": "Dancing under the moonlight.",
+      "location": "",
+      "followers": 31,
+      "public_repos": 6,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/yuecao0119"
+    },
+    {
+      "login": "VectorScience",
+      "name": "VectorScience",
+      "company": "Tsinghua University",
+      "bio": "AI4Science",
+      "location": "Haidian  District, Beijing, 100084, P. R. China",
+      "followers": 13,
+      "public_repos": 6,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/VectorScience"
+    },
+    {
+      "login": "muz1lee",
+      "name": "muz1lee",
+      "company": "National University of Singapore",
+      "bio": "",
+      "location": "Singapore",
+      "followers": 11,
+      "public_repos": 8,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/muz1lee"
+    },
+    {
+      "login": "DevoAllen",
+      "name": "DevoAllen",
+      "company": "Harbin Institute of Technology(Shenzhen)",
+      "bio": "",
+      "location": "Shenzhen, Guangdong, China",
+      "followers": 8,
+      "public_repos": 7,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/DevoAllen"
+    },
+    {
+      "login": "liuzhan22",
+      "name": "Jason Liu",
+      "company": "Tsinghua University",
+      "bio": "An undergraduate in THUEE.",
+      "location": "Beijing, China",
+      "followers": 6,
+      "public_repos": 16,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/liuzhan22"
+    },
+    {
+      "login": "Prophet768189",
+      "name": "Tianyu Jiao",
+      "company": "TsingHua University",
+      "bio": "NaN",
+      "location": "Beijing,CHN",
+      "followers": 3,
+      "public_repos": 4,
+      "score": 1,
+      "tier": "TIER_3",
+      "score_reasons": [
+        "company listed (student-like)"
+      ],
+      "profile_url": "https://github.com/Prophet768189"
+    },
+    {
+      "login": "Liqq1",
+      "name": "YOLO",
+      "company": "",
+      "bio": "",
+      "location": "Shanghai, China",
+      "followers": 38,
+      "public_repos": 9,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/Liqq1"
+    },
+    {
+      "login": "Letian-Wang",
+      "name": "Letian Wang",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 24,
+      "public_repos": 18,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/Letian-Wang"
+    },
+    {
+      "login": "stone28615",
+      "name": "Shen Yecheng",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 18,
+      "public_repos": 20,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/stone28615"
+    },
+    {
+      "login": "zhaoyd1",
+      "name": "Yida Zhao",
+      "company": "",
+      "bio": "CS graduate in ShanghaiTech",
+      "location": "Shanghai",
+      "followers": 18,
+      "public_repos": 14,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/zhaoyd1"
+    },
+    {
+      "login": "MercyMo",
+      "name": "MercyMo",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 15,
+      "public_repos": 12,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/MercyMo"
+    },
+    {
+      "login": "Aquilajw",
+      "name": "Jian Wang",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 11,
+      "public_repos": 1,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/Aquilajw"
+    },
+    {
+      "login": "zhanghaonan777",
+      "name": "Saul Goodman",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 10,
+      "public_repos": 15,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/zhanghaonan777"
+    },
+    {
+      "login": "tc-yue",
+      "name": "yue",
+      "company": "",
+      "bio": "Just stay naive",
+      "location": "",
+      "followers": 9,
+      "public_repos": 15,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/tc-yue"
+    },
+    {
+      "login": "yixinhuang48",
+      "name": "Yixin Huang",
+      "company": "",
+      "bio": "RA @ UCSD Hao AI Lab",
+      "location": "San Diego",
+      "followers": 7,
+      "public_repos": 5,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/yixinhuang48"
+    },
+    {
+      "login": "suhmily10",
+      "name": "suhmily10",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 6,
+      "public_repos": 9,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/suhmily10"
+    },
+    {
+      "login": "xuan-dong-shanda",
+      "name": "xuan-dong-shanda",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 4,
+      "public_repos": 1,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/xuan-dong-shanda"
+    },
+    {
+      "login": "turboslon",
+      "name": "Ilya Chidyakin",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 3,
+      "public_repos": 7,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/turboslon"
+    },
+    {
+      "login": "anonNo2",
+      "name": "anon.W",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 0,
+      "public_repos": 12,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/anonNo2"
+    },
+    {
+      "login": "gali-leilei",
+      "name": "lei-lei",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 0,
+      "public_repos": 18,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/gali-leilei"
+    },
+    {
+      "login": "oooskarrr",
+      "name": "oooskarrr",
+      "company": "",
+      "bio": "",
+      "location": "",
+      "followers": 0,
+      "public_repos": 8,
+      "score": 0,
+      "tier": "TIER_3",
+      "score_reasons": [],
+      "profile_url": "https://github.com/oooskarrr"
+    }
+  ],
+  "fallback_reason": "GitHub stargazer fetch failed: HTTP Error 403: rate limit exceeded",
+  "fallback_at": "2026-04-13T22:16:42Z"
 }
